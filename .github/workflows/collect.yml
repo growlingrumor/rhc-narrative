@@ -1,0 +1,54 @@
+# Reads the chain every 10 minutes and commits the result, so the published
+# page always has a recent window without needing a server.
+#
+# This workflow only ever READS the chain. It holds no keys and signs nothing.
+# Its write permission is to this repository's data/ directory, nothing else.
+
+name: collect
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Rebuilds the sense of "normal" once a day. Without it every word
+      # eventually drifts out of date; with it running every 10 minutes we
+      # would hammer the public explorer for no reason.
+      - name: refresh baseline (once a day, at the 03:0x run)
+        if: github.event_name == 'schedule'
+        run: |
+          if [ "$(date -u +%H)" = "03" ] && [ "$(date -u +%M)" -lt 10 ]; then
+            node scripts/bootstrap-baseline.mjs
+          else
+            echo "not the daily slot, skipping baseline rebuild"
+          fi
+
+      - name: collect one window
+        run: node scripts/collect.mjs
+
+      - name: commit if anything changed
+        run: |
+          git config user.name  "collector"
+          git config user.email "collector@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "window $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

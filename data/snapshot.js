@@ -1,0 +1,695 @@
+/* data/snapshot.js — EXAMPLE DATA.
+ * Shipped so the page renders before the collector has ever run.
+ * Overwritten with real chain data by scripts/collect.mjs.
+ */
+;(function (scope) {
+  scope.RHC_SNAPSHOT = {
+    "schema": 1,
+    "demo": true,
+    "chain": "robinhood",
+    "chain_id": 4663,
+    "closed_at": "2026-09-12T20:08:12.268Z",
+    "opened_at": "2026-09-12T19:08:12.268Z",
+    "window_hours": 1,
+    "head_block": 18446201,
+    "source": "example data, not the chain",
+    "complete": true,
+    "launches": 179,
+    "unnamed_contracts": 12,
+    "deployers": 176,
+    "roots": 341,
+    "cleared_multiple": 314,
+    "failed_gates": 311,
+    "baseline_ready": true,
+    "baseline_days": 14,
+    "config": {
+      "window_minutes": 60,
+      "baseline_days": 14,
+      "baseline_multiple": 6,
+      "min_launches": 5,
+      "min_deployers": 6,
+      "cooccurrence": 0.6,
+      "floor_share": 0.0004,
+      "roots_per_launch_max": 3,
+      "root_min_length": 2,
+      "root_max_length": 14
+    },
+    "themes": [
+      "basket-lst",
+      "restake"
+    ],
+    "top": {
+      "root": "restake",
+      "launches": 12,
+      "deployers": 12,
+      "baseline_share": 0.0009,
+      "multiple": 74.5,
+      "state": "WAVE",
+      "reason": ""
+    },
+    "rows": [
+      {
+        "root": "restake",
+        "launches": 12,
+        "deployers": 12,
+        "baseline_share": 0.0009,
+        "multiple": 74.5,
+        "state": "WAVE",
+        "reason": ""
+      },
+      {
+        "root": "lst",
+        "launches": 7,
+        "deployers": 7,
+        "baseline_share": 0.0008,
+        "multiple": 48.9,
+        "state": "MERGED",
+        "reason": "basket + lst co-occur 100%, merged to basket-lst"
+      },
+      {
+        "root": "basket",
+        "launches": 7,
+        "deployers": 7,
+        "baseline_share": 0.0011,
+        "multiple": 35.6,
+        "state": "MERGED",
+        "reason": "basket + lst co-occur 100%, merged to basket-lst"
+      },
+      {
+        "root": "dog",
+        "launches": 16,
+        "deployers": 16,
+        "baseline_share": 0.088,
+        "multiple": 1,
+        "state": "BELOW",
+        "reason": "dog: 1.0x over baseline < 6.0x required"
+      },
+      {
+        "root": "perp",
+        "launches": 6,
+        "deployers": 3,
+        "baseline_share": 0.0042,
+        "multiple": 8,
+        "state": "THIN",
+        "reason": "perp: 3 deployers < 6 required"
+      },
+      {
+        "root": "rocket",
+        "launches": 5,
+        "deployers": 5,
+        "baseline_share": 0.0265,
+        "multiple": 1.1,
+        "state": "BELOW",
+        "reason": "rocket: 1.1x over baseline < 6.0x required"
+      },
+      {
+        "root": "hollow",
+        "launches": 4,
+        "deployers": 4,
+        "baseline_share": 0.0004,
+        "multiple": 55.9,
+        "state": "THIN",
+        "reason": "hollow: 4 launches < 5 required"
+      },
+      {
+        "root": "light",
+        "launches": 4,
+        "deployers": 4,
+        "baseline_share": 0.0004,
+        "multiple": 55.9,
+        "state": "THIN",
+        "reason": "light: 4 launches < 5 required"
+      },
+      {
+        "root": "amber",
+        "launches": 3,
+        "deployers": 3,
+        "baseline_share": 0.0004,
+        "multiple": 41.9,
+        "state": "THIN",
+        "reason": "amber: 3 launches < 5 required"
+      },
+      {
+        "root": "garden",
+        "launches": 3,
+        "deployers": 3,
+        "baseline_share": 0.0004,
+        "multiple": 41.9,
+        "state": "THIN",
+        "reason": "garden: 3 launches < 5 required"
+      },
+      {
+        "root": "iron",
+        "launches": 3,
+        "deployers": 3,
+        "baseline_share": 0.0004,
+        "multiple": 41.9,
+        "state": "THIN",
+        "reason": "iron: 3 launches < 5 required"
+      },
+      {
+        "root": "road",
+        "launches": 3,
+        "deployers": 3,
+        "baseline_share": 0.0004,
+        "multiple": 41.9,
+        "state": "THIN",
+        "reason": "road: 3 launches < 5 required"
+      },
+      {
+        "root": "zora",
+        "launches": 3,
+        "deployers": 3,
+        "baseline_share": 0.0006,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "zora: 3 launches < 5 required"
+      },
+      {
+        "root": "river",
+        "launches": 3,
+        "deployers": 3,
+        "baseline_share": 0.006,
+        "multiple": 2.8,
+        "state": "BELOW",
+        "reason": "river: 2.8x over baseline < 6.0x required"
+      },
+      {
+        "root": "star",
+        "launches": 3,
+        "deployers": 3,
+        "baseline_share": 0.016,
+        "multiple": 1,
+        "state": "BELOW",
+        "reason": "star: 1.0x over baseline < 6.0x required"
+      },
+      {
+        "root": "ancient",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "ancient: 2 launches < 5 required"
+      },
+      {
+        "root": "arch",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "arch: 2 launches < 5 required"
+      },
+      {
+        "root": "attic",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "attic: 2 launches < 5 required"
+      },
+      {
+        "root": "bank",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "bank: 2 launches < 5 required"
+      },
+      {
+        "root": "barn",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "barn: 2 launches < 5 required"
+      },
+      {
+        "root": "beam",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "beam: 2 launches < 5 required"
+      },
+      {
+        "root": "bend",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "bend: 2 launches < 5 required"
+      },
+      {
+        "root": "blue",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "blue: 2 launches < 5 required"
+      },
+      {
+        "root": "branch",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "branch: 2 launches < 5 required"
+      },
+      {
+        "root": "bridge",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "bridge: 2 launches < 5 required"
+      },
+      {
+        "root": "bright",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "bright: 2 launches < 5 required"
+      },
+      {
+        "root": "busy",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "busy: 2 launches < 5 required"
+      },
+      {
+        "root": "calm",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "calm: 2 launches < 5 required"
+      },
+      {
+        "root": "cellar",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "cellar: 2 launches < 5 required"
+      },
+      {
+        "root": "clear",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "clear: 2 launches < 5 required"
+      },
+      {
+        "root": "clearing",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "clearing: 2 launches < 5 required"
+      },
+      {
+        "root": "cliff",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "cliff: 2 launches < 5 required"
+      },
+      {
+        "root": "cold",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "cold: 2 launches < 5 required"
+      },
+      {
+        "root": "complex",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "complex: 2 launches < 5 required"
+      },
+      {
+        "root": "copper",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "copper: 2 launches < 5 required"
+      },
+      {
+        "root": "court",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "court: 2 launches < 5 required"
+      },
+      {
+        "root": "crane",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "crane: 2 launches < 5 required"
+      },
+      {
+        "root": "crowded",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "crowded: 2 launches < 5 required"
+      },
+      {
+        "root": "curve",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "curve: 2 launches < 5 required"
+      },
+      {
+        "root": "dark",
+        "launches": 2,
+        "deployers": 2,
+        "baseline_share": 0.0004,
+        "multiple": 27.9,
+        "state": "THIN",
+        "reason": "dark: 2 launches < 5 required"
+      }
+    ],
+    "recent": [
+      {
+        "name": "Restake Finance",
+        "symbol": "RSTF",
+        "deployer": "0xwallet0",
+        "address": "0x00000000",
+        "ts": "2026-09-12T20:08:12.253Z"
+      },
+      {
+        "name": "Liquid Restake",
+        "symbol": "LQR",
+        "deployer": "0xwallet1",
+        "address": "0x00000001",
+        "ts": "2026-09-12T20:07:53.254Z"
+      },
+      {
+        "name": "Restake DAO",
+        "symbol": "RDAO",
+        "deployer": "0xwallet2",
+        "address": "0x00000002",
+        "ts": "2026-09-12T20:07:34.254Z"
+      },
+      {
+        "name": "restake vault",
+        "symbol": "VLT",
+        "deployer": "0xwallet3",
+        "address": "0x00000003",
+        "ts": "2026-09-12T20:07:15.254Z"
+      },
+      {
+        "name": "Super Restake",
+        "symbol": "SUPR",
+        "deployer": "0xwallet4",
+        "address": "0x00000004",
+        "ts": "2026-09-12T20:06:56.254Z"
+      },
+      {
+        "name": "restake pool",
+        "symbol": "POOL",
+        "deployer": "0xwallet5",
+        "address": "0x00000005",
+        "ts": "2026-09-12T20:06:37.254Z"
+      },
+      {
+        "name": "Restake Labs",
+        "symbol": "LABS",
+        "deployer": "0xwallet6",
+        "address": "0x00000006",
+        "ts": "2026-09-12T20:06:18.254Z"
+      },
+      {
+        "name": "Auto Restake",
+        "symbol": "AUTO",
+        "deployer": "0xwallet7",
+        "address": "0x00000007",
+        "ts": "2026-09-12T20:05:59.254Z"
+      },
+      {
+        "name": "restake node",
+        "symbol": "NODE",
+        "deployer": "0xwallet8",
+        "address": "0x00000008",
+        "ts": "2026-09-12T20:05:40.254Z"
+      },
+      {
+        "name": "Restake One",
+        "symbol": "ONE",
+        "deployer": "0xwallet9",
+        "address": "0x00000009",
+        "ts": "2026-09-12T20:05:21.254Z"
+      },
+      {
+        "name": "restake max",
+        "symbol": "MAXR",
+        "deployer": "0xwallet10",
+        "address": "0x00000010",
+        "ts": "2026-09-12T20:05:02.254Z"
+      },
+      {
+        "name": "Restake Yield",
+        "symbol": "RYLD",
+        "deployer": "0xwallet11",
+        "address": "0x00000011",
+        "ts": "2026-09-12T20:04:43.254Z"
+      },
+      {
+        "name": "LST Basket",
+        "symbol": "LSTB",
+        "deployer": "0xmerge0",
+        "address": "0x00000012",
+        "ts": "2026-09-12T20:04:24.254Z"
+      },
+      {
+        "name": "Basket LST",
+        "symbol": "BLST",
+        "deployer": "0xmerge1",
+        "address": "0x00000013",
+        "ts": "2026-09-12T20:04:05.254Z"
+      },
+      {
+        "name": "lst basket pro",
+        "symbol": "PROB",
+        "deployer": "0xmerge2",
+        "address": "0x00000014",
+        "ts": "2026-09-12T20:03:46.254Z"
+      },
+      {
+        "name": "LST basket vault",
+        "symbol": "VBSK",
+        "deployer": "0xmerge3",
+        "address": "0x00000015",
+        "ts": "2026-09-12T20:03:27.254Z"
+      },
+      {
+        "name": "basket lst index",
+        "symbol": "IDXB",
+        "deployer": "0xmerge4",
+        "address": "0x00000016",
+        "ts": "2026-09-12T20:03:08.254Z"
+      },
+      {
+        "name": "LST Basket Two",
+        "symbol": "TWOB",
+        "deployer": "0xmerge5",
+        "address": "0x00000017",
+        "ts": "2026-09-12T20:02:49.254Z"
+      },
+      {
+        "name": "basket of lst",
+        "symbol": "OFLB",
+        "deployer": "0xmerge6",
+        "address": "0x00000018",
+        "ts": "2026-09-12T20:02:30.254Z"
+      },
+      {
+        "name": "Perp Dex",
+        "symbol": "PDEX",
+        "deployer": "0xperp0",
+        "address": "0x00000019",
+        "ts": "2026-09-12T20:02:11.254Z"
+      },
+      {
+        "name": "perp trade",
+        "symbol": "PTRD",
+        "deployer": "0xperp1",
+        "address": "0x00000020",
+        "ts": "2026-09-12T20:01:52.254Z"
+      },
+      {
+        "name": "Perp Engine",
+        "symbol": "PENG",
+        "deployer": "0xperp2",
+        "address": "0x00000021",
+        "ts": "2026-09-12T20:01:33.254Z"
+      },
+      {
+        "name": "perp max",
+        "symbol": "PMAX",
+        "deployer": "0xperp0",
+        "address": "0x00000022",
+        "ts": "2026-09-12T20:01:14.254Z"
+      },
+      {
+        "name": "Perp One",
+        "symbol": "PONE",
+        "deployer": "0xperp1",
+        "address": "0x00000023",
+        "ts": "2026-09-12T20:00:55.254Z"
+      },
+      {
+        "name": "perp zero",
+        "symbol": "PZRO",
+        "deployer": "0xperp2",
+        "address": "0x00000024",
+        "ts": "2026-09-12T20:00:36.254Z"
+      },
+      {
+        "name": "Zora Mint",
+        "symbol": "ZMNT",
+        "deployer": "0xzora0",
+        "address": "0x00000025",
+        "ts": "2026-09-12T20:00:17.254Z"
+      },
+      {
+        "name": "zora drop",
+        "symbol": "ZDRP",
+        "deployer": "0xzora1",
+        "address": "0x00000026",
+        "ts": "2026-09-12T19:59:58.254Z"
+      },
+      {
+        "name": "Zora Pass",
+        "symbol": "ZPAS",
+        "deployer": "0xzora2",
+        "address": "0x00000027",
+        "ts": "2026-09-12T19:59:39.254Z"
+      },
+      {
+        "name": "Dog Money",
+        "symbol": "DGMN",
+        "deployer": "0xdog0",
+        "address": "0x00000028",
+        "ts": "2026-09-12T19:59:20.254Z"
+      },
+      {
+        "name": "Space Dog",
+        "symbol": "SPDG",
+        "deployer": "0xdog1",
+        "address": "0x00000029",
+        "ts": "2026-09-12T19:59:01.254Z"
+      },
+      {
+        "name": "dog inu",
+        "symbol": "DGIN",
+        "deployer": "0xdog2",
+        "address": "0x00000030",
+        "ts": "2026-09-12T19:58:42.254Z"
+      },
+      {
+        "name": "Mega Dog",
+        "symbol": "MGDG",
+        "deployer": "0xdog3",
+        "address": "0x00000031",
+        "ts": "2026-09-12T19:58:23.254Z"
+      },
+      {
+        "name": "dog world",
+        "symbol": "DGWD",
+        "deployer": "0xdog4",
+        "address": "0x00000032",
+        "ts": "2026-09-12T19:58:04.254Z"
+      },
+      {
+        "name": "Good Dog",
+        "symbol": "GDDG",
+        "deployer": "0xdog5",
+        "address": "0x00000033",
+        "ts": "2026-09-12T19:57:45.254Z"
+      },
+      {
+        "name": "Dog Star",
+        "symbol": "DGST",
+        "deployer": "0xdog6",
+        "address": "0x00000034",
+        "ts": "2026-09-12T19:57:26.254Z"
+      },
+      {
+        "name": "dog planet",
+        "symbol": "DGPL",
+        "deployer": "0xdog7",
+        "address": "0x00000035",
+        "ts": "2026-09-12T19:57:07.254Z"
+      },
+      {
+        "name": "Laser Dog",
+        "symbol": "LSDG",
+        "deployer": "0xdog8",
+        "address": "0x00000036",
+        "ts": "2026-09-12T19:56:48.254Z"
+      },
+      {
+        "name": "dog king",
+        "symbol": "DGKG",
+        "deployer": "0xdog9",
+        "address": "0x00000037",
+        "ts": "2026-09-12T19:56:29.254Z"
+      },
+      {
+        "name": "Happy Dog",
+        "symbol": "HPDG",
+        "deployer": "0xdog10",
+        "address": "0x00000038",
+        "ts": "2026-09-12T19:56:10.254Z"
+      },
+      {
+        "name": "dog city",
+        "symbol": "DGCT",
+        "deployer": "0xdog11",
+        "address": "0x00000039",
+        "ts": "2026-09-12T19:55:51.254Z"
+      }
+    ]
+  };
+})(typeof window !== 'undefined' ? window : globalThis);

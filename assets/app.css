@@ -1,0 +1,785 @@
+/* assets/app.css
+ * One stylesheet. Every colour is a variable declared once, here. */
+
+:root {
+  /* Neutral dark ground so the hues can carry meaning without shouting. */
+  --bg: #0A0B0F;
+  --plate: #12141B;
+  --plate-2: #171A22;
+  --border: #252935;
+  --border-lit: #39404F;
+
+  /* Six hues, muted on purpose. Each one means something, and nothing on the
+     page is coloured just for decoration. */
+  --orange: #E08A45;   /* the winner: the narrative of the hour */
+  --green:  #7FB95A;   /* passed a threshold */
+  --red:    #C8584E;   /* failed hard */
+  --blue:   #5691C4;   /* counts of things: tokens, blocks */
+  --violet: #9B7BC4;   /* merged words */
+  --teal:   #4FA99B;   /* wallets */
+  --yellow: #D4B049;   /* attention, warnings */
+
+  /* aliases kept so older rules keep working */
+  --gold: var(--orange);
+  --gold-dark: #8A5B2A;
+  --amber: var(--orange);
+  --green-dim: #5F8C42;
+  --green-deep: #3E5C2C;
+
+  --grey: #7C8291;
+  --white: #E4E6EA;
+
+  --glow: 0 0 12px rgba(127, 185, 90, 0.22);
+  --glow-amber: 0 0 14px rgba(224, 138, 69, 0.30);
+
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  padding: 0 0 64px;
+  position: relative;
+}
+
+/* Faint horizontal scanlines and a top glow. Pure decoration, kept cheap:
+   two fixed gradients, no animation, no repaint cost. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    linear-gradient(rgba(150, 170, 210, 0.045), rgba(150, 170, 210, 0) 380px),
+    repeating-linear-gradient(
+      rgba(255, 255, 255, 0) 0 2px,
+      rgba(0, 0, 0, 0.22) 2px 3px
+    );
+}
+
+.wrap, header { position: relative; z-index: 2; }
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border); }
+a:hover { border-bottom-color: var(--gold); }
+
+/* ------------------------------------------------------------- header */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0 14px;
+  margin-bottom: 28px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.brand .sub { color: var(--grey); font-size: 12px; }
+
+.status {
+  margin-top: 10px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: var(--grey);
+}
+
+.status b { color: var(--white); font-weight: 400; }
+
+.badge {
+  display: inline-block;
+  padding: 1px 7px;
+  border: 1px solid var(--border);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--grey);
+}
+
+.badge.live { color: var(--green); border-color: var(--green); }
+.badge.stale { color: var(--amber); border-color: var(--amber); }
+.badge.empty { color: var(--red); border-color: var(--red); }
+
+/* --------------------------------------------------------------- hero */
+.hero {
+  border: 1px solid var(--border);
+  background: var(--plate);
+  padding: 26px 24px;
+  margin-bottom: 12px;
+}
+
+.hero .label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.hero .word {
+  font-size: 52px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 10px 0 6px;
+  word-break: break-word;
+}
+
+.hero .word.none { color: var(--grey); font-size: 26px; }
+
+.hero .read { color: var(--white); font-size: 13px; margin: 0; }
+.hero .read em { font-style: normal; color: var(--gold); }
+
+.hero .note { color: var(--grey); font-size: 11px; margin: 10px 0 0; }
+
+/* ------------------------------------------------------------- blocks */
+section { margin-bottom: 34px; }
+
+h2 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--white);
+}
+
+.caption { color: var(--grey); font-size: 11px; margin: 0 0 12px; }
+
+/* -------------------------------------------------------------- table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--grey);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0 10px 6px 0;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+td {
+  padding: 6px 10px 6px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+td.num, th.num { text-align: right; padding-right: 16px; font-variant-numeric: tabular-nums; }
+
+tr.wave td { color: var(--white); }
+tr.wave td.root { color: var(--gold); font-weight: 700; }
+tr.below td, tr.thin td { color: var(--grey); }
+tr.merged td.root { color: var(--amber); }
+
+.state {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+.state.WAVE { color: var(--green); }
+.state.BELOW { color: var(--grey); }
+.state.THIN { color: var(--amber); }
+.state.MERGED { color: var(--amber); }
+
+.reason { color: var(--grey); font-size: 11px; }
+
+/* --------------------------------------------------------------- feed */
+.feed { border-top: 1px solid var(--border); }
+
+.feed .row {
+  display: grid;
+  grid-template-columns: 62px 1fr 92px 128px;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  align-items: baseline;
+}
+
+.feed .time { color: var(--grey); font-size: 11px; }
+.feed .sym { color: var(--grey); }
+.feed .who { color: var(--grey); font-size: 11px; overflow: hidden; text-overflow: ellipsis; }
+.feed mark { background: none; color: var(--gold); font-weight: 700; }
+
+/* -------------------------------------------------------------- steps */
+.steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+
+.steps li {
+  counter-increment: step;
+  padding: 10px 0 10px 34px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  font-size: 12px;
+  color: var(--white);
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: var(--gold);
+  font-size: 11px;
+}
+
+.steps span { color: var(--grey); display: block; margin-top: 2px; }
+
+/* --------------------------------------------------------- config, kv */
+.kv { display: grid; grid-template-columns: 1fr auto; gap: 0; margin: 0; font-size: 12px; }
+.kv dt { color: var(--grey); padding: 5px 0; border-bottom: 1px solid var(--border); }
+.kv dd {
+  margin: 0;
+  padding: 5px 0;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------- limits */
+.limits p { color: var(--grey); font-size: 12px; margin: 0 0 10px; }
+
+.warn {
+  border: 1px solid var(--amber);
+  color: var(--amber);
+  padding: 12px 14px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.warn b { color: var(--amber); }
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+  padding-top: 14px;
+  color: var(--grey);
+  font-size: 11px;
+}
+
+/* -------------------------------------------------------------- small */
+@media (max-width: 720px) {
+  .hero .word { font-size: 36px; }
+  .feed .row { grid-template-columns: 54px 1fr; }
+  .feed .sym, .feed .who { display: none; }
+  table { font-size: 11px; }
+  .hide-s { display: none; }
+}
+
+/* =====================================================================
+   THE MOVING PARTS
+   Motion is used to show the split, the routing and the threshold check.
+   Everything below is disabled wholesale under prefers-reduced-motion.
+   ===================================================================== */
+
+.lane {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 54px 1.4fr;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: var(--plate);
+  padding: 16px 18px;
+  min-height: 74px;
+}
+
+.lane-in { overflow: hidden; }
+
+.lane-name {
+  display: block;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  animation: slide-in 420ms ease-out both;
+}
+
+.lane-sym {
+  display: block;
+  color: var(--grey);
+  font-size: 11px;
+  margin-top: 2px;
+  animation: slide-in 420ms ease-out 60ms both;
+}
+
+/* Three dashes that travel left to right: the hand-off from a name to the
+   words it produced. */
+.lane-link {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lane-link span {
+  width: 5px;
+  height: 1px;
+  background: var(--border);
+  animation: travel 1.6s linear infinite;
+}
+.lane-link span:nth-child(2) { animation-delay: 0.18s; }
+.lane-link span:nth-child(3) { animation-delay: 0.36s; }
+
+.lane-out {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-content: center;
+}
+
+.chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  font-size: 11px;
+  animation: chip-in 320ms ease-out both;
+}
+
+.chip.kept { color: var(--gold); border-color: var(--gold-dark); }
+.chip.dropped { color: var(--grey); opacity: 0.45; text-decoration: line-through; }
+
+.lane-foot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 14px;
+  flex-wrap: wrap;
+}
+
+.lane-foot .caption { margin: 0; }
+
+.ghost {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--grey);
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 3px 12px;
+  cursor: pointer;
+}
+.ghost:hover { color: var(--white); border-color: var(--grey); }
+
+/* ------------------------------------------------------------- tally */
+.tally { display: grid; gap: 1px; }
+
+.tally-row {
+  display: grid;
+  grid-template-columns: 132px 1fr 52px;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  padding: 7px 0;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--grey);
+  text-align: left;
+  cursor: pointer;
+}
+
+.tally-word { color: var(--white); overflow: hidden; text-overflow: ellipsis; }
+.tally-row.state-WAVE .tally-word { color: var(--gold); font-weight: 700; }
+.tally-count { text-align: right; font-variant-numeric: tabular-nums; }
+
+.tally-bar { height: 6px; background: var(--bg); border: 1px solid var(--border); }
+.tally-fill { display: block; height: 100%; background: var(--border); transition: background 200ms; }
+.tally-row.state-WAVE .tally-fill { background: var(--gold-dark); }
+
+.tally-row.hit { color: var(--white); }
+.tally-row.hit .tally-fill { background: var(--gold); }
+.tally-row.hit .tally-count { color: var(--gold); }
+.tally-row.focused { border-bottom-color: var(--gold); }
+
+/* ------------------------------------------------------------ gauges */
+.gauges {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  gap: 10px;
+}
+
+.gauge-card {
+  border: 1px solid var(--border);
+  background: var(--plate);
+  padding: 12px 14px;
+  font-family: var(--mono);
+  text-align: left;
+  cursor: pointer;
+  color: var(--grey);
+}
+.gauge-card:hover { border-color: var(--grey); }
+.gauge-card.focused { border-color: var(--gold); }
+
+.gauge-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.gauge-word { font-size: 13px; font-weight: 700; color: var(--white); }
+.gauge-card.state-WAVE .gauge-word { color: var(--gold); }
+
+.gauge { margin-bottom: 8px; }
+
+.gauge-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 3px;
+}
+
+.gauge-value { font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.gauge-value.pass { color: var(--green); }
+.gauge-value.fail { color: var(--amber); }
+
+.gauge-track {
+  position: relative;
+  height: 7px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.gauge-fill {
+  display: block;
+  height: 100%;
+  transition: width 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.gauge-fill.pass { background: var(--green); }
+.gauge-fill.fail { background: var(--amber); }
+
+/* the threshold notch: the number that has to be beaten */
+.gauge-mark {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 1px;
+  background: var(--white);
+  opacity: 0.55;
+}
+
+.focus-note { min-height: 16px; }
+.focus-note.on { color: var(--gold); }
+
+/* ------------------------------------------------------------ motion */
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes chip-in {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes travel {
+  0% { opacity: 0; transform: translateX(-6px); }
+  40% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lane-name, .lane-sym, .chip, .lane-link span, .gauge-fill {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .lane { grid-template-columns: 1fr; }
+  .lane-link { display: none; }
+  .tally-row { grid-template-columns: 96px 1fr 44px; }
+}
+
+/* =====================================================================
+   MASCOT, MASTHEAD, PILLS
+   ===================================================================== */
+
+.masthead {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 26px 0 20px;
+}
+
+.mascot {
+  width: 112px;
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.10));
+}
+
+.mascot-svg { width: 100%; height: auto; display: block; }
+
+/* Fill and opacity are set per cell in JS; the transition here is what turns
+   a shape swap into a morph. transition-delay is set per cell too. */
+.mascot-svg .px {
+  transition: fill 420ms ease, opacity 380ms ease;
+}
+
+/* While a narrative stands, the face brightens rather than changing colour,
+   so the amber stays reserved for the winning word. */
+.mascot-svg.crowned { filter: brightness(1.18) saturate(1.15); }
+
+.mascot-svg.ate [data-part='eye'] { fill: var(--orange) !important; }
+.mascot-svg.ate [data-part='mouth'] { fill: var(--orange) !important; }
+.mascot-svg.shrug [data-part='mouth'] { fill: var(--border) !important; }
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+  color: var(--green);
+  text-shadow: var(--glow);
+}
+
+.title .accent { color: var(--amber); text-shadow: var(--glow-amber); }
+
+.tagline { color: var(--grey); font-size: 12px; margin: 0 0 12px; }
+.tagline em { font-style: normal; color: var(--white); }
+
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.pill {
+  border: 1px solid var(--border-lit);
+  color: var(--green-dim);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  padding: 2px 9px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pill b { color: var(--green); font-weight: 400; }
+.pill.warn-pill { border-color: var(--amber); color: var(--amber); }
+
+/* ------------------------------------------------------- plate polish */
+.hero, .lane, .gauge-card {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.hero {
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(224, 138, 69, 0.07), transparent 60%),
+    var(--plate);
+}
+
+.hero .word { text-shadow: var(--glow-amber); }
+
+h2 { color: var(--green); letter-spacing: 0.04em; }
+h2::before { content: '> '; color: var(--green-deep); }
+
+.badge.live { box-shadow: var(--glow); }
+
+/* --------------------------------------------------------- scan strip
+   A bar that sweeps once when fresh data lands, so an update is visible
+   rather than silently replacing the numbers. */
+.scanstrip {
+  height: 2px;
+  background: var(--border);
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.scanstrip span {
+  display: block;
+  height: 100%;
+  width: 34%;
+  background: linear-gradient(90deg, transparent, var(--blue), transparent);
+  transform: translateX(-100%);
+}
+
+.scanstrip.sweep span { animation: sweep 1100ms ease-in-out; }
+
+@keyframes sweep {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(360%); }
+}
+
+/* --------------------------------------------------- counters, bigger */
+.tally-row { border-bottom-color: var(--border); }
+.tally-row:hover { background: var(--plate); }
+.tally-fill { background: var(--green-deep); }
+.tally-row.state-WAVE .tally-fill { background: var(--green-dim); }
+.tally-row.hit .tally-fill { background: var(--green); box-shadow: var(--glow); }
+.tally-row.hit .tally-count { color: var(--green); }
+.tally-row.state-WAVE .tally-word { color: var(--amber); }
+
+.chip.kept {
+  color: var(--green);
+  border-color: var(--border-lit);
+  box-shadow: var(--glow);
+}
+
+.lane-link span { background: var(--green-deep); }
+
+.state.WAVE { color: var(--amber); }
+.state.THIN, .state.MERGED { color: var(--green-dim); }
+
+tr.wave td.root { color: var(--amber); }
+.feed mark { color: var(--amber); }
+
+.gauge-fill.pass { background: var(--green); box-shadow: var(--glow); }
+.gauge-fill.fail { background: var(--green-deep); box-shadow: none; }
+.gauge-value.pass { color: var(--green); }
+.gauge-value.fail { color: var(--grey); }
+.gauge-card.state-WAVE { border-color: var(--border-lit); }
+.gauge-card.state-WAVE .gauge-word { color: var(--amber); }
+
+.steps li::before { color: var(--green); }
+a { color: var(--green); }
+a:hover { border-bottom-color: var(--green); }
+
+@media (max-width: 720px) {
+  .masthead { grid-template-columns: 1fr; gap: 14px; }
+  .mascot { width: 84px; }
+  .title { font-size: 16px; }
+}
+
+/* =====================================================================
+   COLOUR ASSIGNMENT
+   Hue carries meaning here. Reading the page should not require the
+   legend, but the legend is: orange wins, green passes, grey fails,
+   blue counts tokens, teal counts wallets, violet means merged.
+   ===================================================================== */
+
+.title { color: var(--white); text-shadow: none; }
+.title .accent { color: var(--orange); text-shadow: var(--glow-amber); }
+
+h2 { color: var(--white); }
+h2::before { content: '> '; color: var(--border-lit); }
+
+/* Each section head takes its own hue, in order down the page. */
+section:nth-of-type(1) h2::before { color: var(--orange); }
+section:nth-of-type(2) h2::before { color: var(--green); }
+section:nth-of-type(3) h2::before { color: var(--teal); }
+section:nth-of-type(4) h2::before { color: var(--blue); }
+section:nth-of-type(5) h2::before { color: var(--violet); }
+section:nth-of-type(6) h2::before { color: var(--yellow); }
+section:nth-of-type(7) h2::before { color: var(--red); }
+
+.pill { border-color: var(--border); color: var(--grey); }
+.pill:nth-child(1) { border-color: var(--orange); color: var(--orange); }
+.pill:nth-child(2) { border-color: var(--violet); color: var(--violet); }
+.pill:nth-child(3) { border-color: var(--green); color: var(--green); }
+.pill:nth-child(4) { border-color: var(--blue); color: var(--blue); }
+.pill:nth-child(5) { border-color: var(--teal); color: var(--teal); }
+.pill:nth-child(6) { border-color: var(--yellow); color: var(--yellow); }
+.pill b { color: inherit; font-weight: 700; }
+
+/* -------------------------------------------------------------- states */
+.state.WAVE { color: var(--orange); }
+.state.MERGED { color: var(--violet); }
+.state.THIN { color: var(--yellow); }
+.state.BELOW { color: var(--grey); }
+
+tr.wave td.root { color: var(--orange); }
+tr.merged td.root { color: var(--violet); }
+
+/* --------------------------------------------------------------- lane */
+.chip.kept { color: var(--green); border-color: var(--green); box-shadow: none; }
+.chip.dropped { color: var(--grey); border-color: var(--border); }
+.lane-link span { background: var(--blue); }
+
+/* -------------------------------------------------------------- tally */
+.tally-bar { border-color: var(--border); }
+.tally-fill { background: var(--border-lit); }
+.tally-row.state-WAVE .tally-word { color: var(--orange); }
+.tally-row.state-WAVE .tally-fill { background: var(--gold-dark); }
+.tally-row.state-MERGED .tally-word { color: var(--violet); }
+.tally-row.hit .tally-fill { background: var(--green); box-shadow: var(--glow); }
+.tally-row.hit .tally-count { color: var(--green); }
+.tally-row.focused { border-bottom-color: var(--orange); }
+
+/* ------------------------------------------------------------- gauges
+   Three bars, three hues, so a glance tells you which test you are
+   looking at without reading the label. */
+.gauge:nth-child(2) .gauge-fill.pass { background: var(--violet); }
+.gauge:nth-child(3) .gauge-fill.pass { background: var(--blue); }
+.gauge:nth-child(4) .gauge-fill.pass { background: var(--teal); }
+.gauge-fill.fail { background: var(--border-lit); box-shadow: none; }
+.gauge-value.pass { color: var(--white); }
+.gauge-value.fail { color: var(--grey); }
+.gauge-card.state-WAVE { border-color: var(--gold-dark); }
+.gauge-card.state-WAVE .gauge-word { color: var(--orange); }
+.gauge-card.focused { border-color: var(--orange); }
+
+.feed mark { color: var(--orange); }
+.steps li::before { color: var(--blue); }
+a { color: var(--blue); }
+a:hover { border-bottom-color: var(--blue); }
+.warn { border-color: var(--yellow); color: var(--yellow); }
+.badge.live { color: var(--green); border-color: var(--green); box-shadow: none; }
+.badge.stale { color: var(--yellow); border-color: var(--yellow); }
+
+/* -------------------------------------------------------------- history */
+.hist { border-top: 1px solid var(--border); }
+
+.hist-row {
+  display: grid;
+  grid-template-columns: 56px 1fr 66px 92px 96px 92px;
+  gap: 12px;
+  align-items: baseline;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--grey);
+}
+
+.hist-time { color: var(--grey); font-size: 11px; }
+.hist-word { color: var(--orange); font-weight: 700; }
+.hist-row.quiet .hist-word { color: var(--grey); font-weight: 400; }
+.hist-mult { color: var(--white); font-variant-numeric: tabular-nums; }
+.hist-num { font-variant-numeric: tabular-nums; }
+.hist-read { text-align: right; color: var(--blue); font-variant-numeric: tabular-nums; }
+
+.hist-pager {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.hist-pager .caption { margin: 0; }
+.ghost.off { opacity: 0.35; cursor: default; }
+
+@media (max-width: 720px) {
+  .hist-row { grid-template-columns: 48px 1fr 60px; }
+  .hist-num { display: none; }
+  .hist-read { display: none; }
+}

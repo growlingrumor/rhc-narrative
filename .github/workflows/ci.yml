@@ -1,0 +1,15 @@
+# The build fails if the tests fail, or if anything key-shaped enters the repo.
+name: ci
+on: [push, pull_request]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: tests
+        run: node --test tests/
+      - name: scan for keys
+        run: node scripts/scan-keys.mjs

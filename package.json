@@ -1,0 +1,16 @@
+{
+  "name": "rhc-narrative",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Counts which word appears in new Robinhood Chain token names far more often than it normally does.",
+  "scripts": {
+    "test": "node --test tests/",
+    "scan": "node scripts/scan-keys.mjs",
+    "collect": "node scripts/collect.mjs",
+    "baseline": "node scripts/bootstrap-baseline.mjs",
+    "demo": "node scripts/make-demo.mjs",
+    "serve": "python3 -m http.server 8080"
+  },
+  "engines": { "node": ">=20" }
+}

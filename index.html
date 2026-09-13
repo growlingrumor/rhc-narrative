@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robinhood Chain · narrative of the last hour</title>
+<meta name="description" content="Counts which word appears in new Robinhood Chain token names far more often than it normally does.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="masthead">
+      <div class="mascot" id="mascot"></div>
+      <div>
+        <h1 class="title">ROBINHOOD CHAIN &middot; <span class="accent">NARRATIVE OF THE LAST HOUR</span></h1>
+        <p class="tagline">it doesn't know what the words mean. it counts <em>how much more often they show up than usual</em>.</p>
+        <div class="pills">
+          <span class="pill">no model</span>
+          <span class="pill">no inference</span>
+          <span class="pill">no keys &middot; <b>read only</b></span>
+          <span class="pill">rpc <b>direct</b></span>
+          <span class="pill">tests <b>26</b></span>
+          <span class="pill">deps <b>0</b></span>
+        </div>
+      </div>
+    </div>
+    <div class="status">
+      <span id="st-mode"><span class="badge" id="badge">LOADING</span></span>
+      <span>updated <b id="st-updated">&mdash;</b></span>
+      <span>block <b id="st-block">&mdash;</b></span>
+      <span>window <b id="st-window">&mdash;</b></span>
+      <span>tokens read <b id="st-launches">&mdash;</b></span>
+      <span>wallets <b id="st-deployers">&mdash;</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="scanstrip" id="scanstrip"><span></span></div>
+
+  <div id="warn-slot"></div>
+
+  <!-- ============================================== the answer, one word -->
+  <section>
+    <div class="hero">
+      <div class="label">top narrative right now</div>
+      <div class="word none" id="hero-word">—</div>
+      <p class="read" id="hero-read">waiting for data</p>
+      <p class="note" id="hero-note"></p>
+    </div>
+  </section>
+
+  <!-- ================================================ the process, moving -->
+  <section>
+    <h2>watch it count</h2>
+    <p class="caption">
+      token names as they arrived, split by the same code that does the counting.
+      grey words are thrown away: stop list, or too short to mean anything.
+      <span id="lane-hint"></span>
+    </p>
+
+    <div class="lane">
+      <div class="lane-in" id="lane-token"></div>
+      <div class="lane-link" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="lane-out" id="lane-words"></div>
+    </div>
+
+    <div class="lane-foot">
+      <button class="ghost" id="lane-toggle" aria-pressed="true">pause</button>
+      <span class="caption">counters below hold this hour's real totals — a row lights up when the streamed token feeds it</span>
+    </div>
+
+    <div class="tally" id="tally"></div>
+  </section>
+
+  <!-- ====================================================== the decision -->
+  <section>
+    <h2>the decision, per word</h2>
+    <p class="caption">
+      three comparisons, all three must clear. the notch on each bar is the threshold.
+      click a word to see which tokens carried it.
+    </p>
+    <div class="gauges" id="gauges"></div>
+    <p class="caption focus-note" id="focus-note"></p>
+  </section>
+
+  <!-- ==================================================== the whole table -->
+  <section>
+    <h2>every word counted this hour</h2>
+    <p class="caption">
+      a word is a narrative only when it beats its own normal rate, across enough
+      separate launches, from enough separate wallets. words that failed are listed
+      with the number they missed by.
+    </p>
+    <p class="caption" id="rows-count"></p>
+    <table>
+      <thead>
+        <tr>
+          <th>word</th>
+          <th class="num">tokens</th>
+          <th class="num">wallets</th>
+          <th class="num hide-s">usual share</th>
+          <th class="num">vs usual</th>
+          <th>verdict</th>
+          <th class="hide-s">why not</th>
+        </tr>
+      </thead>
+      <tbody id="rows"><tr><td colspan="7" class="reason">loading…</td></tr></tbody>
+    </table>
+  </section>
+
+  <!-- ========================================================= raw launches -->
+  <section>
+    <h2>tokens created this hour</h2>
+    <p class="caption" id="feed-count">the raw input. matched words are highlighted.</p>
+    <div class="feed" id="feed"></div>
+  </section>
+
+  <!-- ============================================================= history -->
+  <section>
+    <h2>the last four hours</h2>
+    <p class="caption">
+      one row per closed window. only the last 24 are kept — older ones are dropped
+      so the repository does not grow without end.
+    </p>
+    <div class="hist" id="history"></div>
+    <div class="hist-pager" id="history-pager"></div>
+  </section>
+
+  <!-- ============================================================== method -->
+  <section>
+    <h2>how it works</h2>
+    <p class="caption">four steps, all of them counting. no model, no inference.</p>
+    <ol class="steps">
+      <li>read every token created on Robinhood Chain in the last hour
+        <span>name, symbol and the wallet that deployed it</span></li>
+      <li>split names into words and drop the meaningless ones
+        <span>"coin", "token", "the", chain names — the full stop list is in the repository</span></li>
+      <li>compare each word against how often it normally appears
+        <span>built from the last 14 days of the chain's own history</span></li>
+      <li>report a word only if it beats all three thresholds
+        <span>far above its normal rate, enough separate launches, enough separate wallets</span></li>
+    </ol>
+  </section>
+
+  <!-- ============================================================ settings -->
+  <section>
+    <h2>thresholds</h2>
+    <p class="caption">changing these changes the answer. they are chosen, not derived.</p>
+    <dl class="kv" id="config"></dl>
+  </section>
+
+  <!-- ============================================================== limits -->
+  <section class="limits">
+    <h2>what this cannot do</h2>
+    <p>it matches strings, not meaning. a narrative carried under different words is missed completely. a narrative where everyone copied one name is found in seconds.</p>
+    <p>a word appearing often is not the signal. a word appearing far more often than it normally does is the signal. "dog" can lead every hour and never count, because "dog" always leads.</p>
+    <p>the thresholds are a judgement call. someone who groups the same launches differently gets a different answer, and that is a property of counting, not a defect hidden from you.</p>
+    <p>this page shows what was created, not what is worth buying. a spike in token names is evidence that people are launching the same word, and nothing else.</p>
+  </section>
+
+  <footer>
+    <span id="foot-source">source: —</span> ·
+    <a href="https://robinhoodchain.blockscout.com">explorer</a> ·
+    <a href="docs/DETECTION.md">method</a> ·
+    <a href="docs/COLLECTOR.md">collector</a>
+  </footer>
+
+</div>
+
+<!-- Snapshot first: it is a plain global, so the page still works when opened
+     straight off disk where fetch() is blocked. app.js then tries to fetch a
+     fresher window over HTTP and upgrades the page if it gets one. -->
+<script src="data/snapshot.js"></script>
+<script src="src/detect.js"></script>
+<script src="src/mascot.js"></script>
+<script src="src/render.js"></script>
+<script src="src/live.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>
