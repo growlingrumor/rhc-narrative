@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "closed_at": "2026-09-13T21:05:46.000Z",
+    "window_hours": 1,
+    "launches": 1792,
+    "deployers": 1333,
+    "roots": 2112,
+    "narratives": 47,
+    "top": "ai",
+    "top_launches": 44,
+    "top_wallets": 41,
+    "multiple": 61.4,
+    "baseline_ready": false
+  }
+]

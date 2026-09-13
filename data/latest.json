@@ -1,22 +1,27 @@
 {
   "schema": 1,
-  "demo": true,
   "chain": "robinhood",
   "chain_id": 4663,
-  "closed_at": "2026-09-12T20:08:12.268Z",
-  "opened_at": "2026-09-12T19:08:12.268Z",
+  "closed_at": "2026-09-13T21:05:46.000Z",
+  "opened_at": "2026-09-13T20:05:46.000Z",
   "window_hours": 1,
-  "head_block": 18446201,
-  "source": "example data, not the chain",
+  "head_block": 62262496,
+  "start_block": 62226923,
+  "blocks_scanned": 35573,
+  "source": "https://rpc.mainnet.chain.robinhood.com",
   "complete": true,
-  "launches": 179,
-  "unnamed_contracts": 12,
-  "deployers": 176,
-  "roots": 341,
-  "cleared_multiple": 314,
-  "failed_gates": 311,
-  "baseline_ready": true,
-  "baseline_days": 14,
+  "launches": 1792,
+  "unnamed_contracts": 0,
+  "via_factory": 1731,
+  "no_receipt": 0,
+  "candidates": 1792,
+  "mint_events": 98116,
+  "deployers": 1333,
+  "roots": 2112,
+  "cleared_multiple": 97,
+  "failed_gates": 36,
+  "baseline_ready": false,
+  "baseline_days": 0,
   "config": {
     "window_minutes": 60,
     "baseline_days": 14,
@@ -30,660 +35,825 @@
     "root_max_length": 14
   },
   "themes": [
-    "basket-lst",
-    "restake"
+    "ai",
+    "arena",
+    "artificial-gooner-intelligence",
+    "bf-brownfi",
+    "big-titty",
+    "broker",
+    "cage",
+    "cat",
+    "catonfone-fone",
+    "chaintag-tag",
+    "debt-debtcoin",
+    "dog",
+    "doge",
+    "dreams-our",
+    "end-let",
+    "every",
+    "extra-thick",
+    "forkwars",
+    "fun",
+    "glonk",
+    "hoe",
+    "hoes",
+    "hood",
+    "house-pawn",
+    "kabo-kabocoin",
+    "know",
+    "mascot",
+    "microsoft",
+    "nft",
+    "no-nut",
+    "onchain",
+    "otti",
+    "ph",
+    "pons",
+    "positions",
+    "pour",
+    "powa",
+    "rh",
+    "robin",
+    "robinhood",
+    "runner",
+    "sexy",
+    "trump",
+    "twice",
+    "uniswap-uni",
+    "usdg",
+    "world"
   ],
   "top": {
-    "root": "restake",
-    "launches": 12,
-    "deployers": 12,
-    "baseline_share": 0.0009,
-    "multiple": 74.5,
+    "root": "ai",
+    "launches": 44,
+    "deployers": 41,
+    "baseline_share": 0.0004,
+    "multiple": 61.4,
     "state": "WAVE",
     "reason": ""
   },
   "rows": [
     {
-      "root": "restake",
-      "launches": 12,
-      "deployers": 12,
-      "baseline_share": 0.0009,
-      "multiple": 74.5,
+      "root": "ai",
+      "launches": 44,
+      "deployers": 41,
+      "baseline_share": 0.0004,
+      "multiple": 61.4,
       "state": "WAVE",
       "reason": ""
     },
     {
-      "root": "lst",
-      "launches": 7,
-      "deployers": 7,
-      "baseline_share": 0.0008,
-      "multiple": 48.9,
-      "state": "MERGED",
-      "reason": "basket + lst co-occur 100%, merged to basket-lst"
+      "root": "robin",
+      "launches": 31,
+      "deployers": 23,
+      "baseline_share": 0.0004,
+      "multiple": 43.2,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "basket",
-      "launches": 7,
-      "deployers": 7,
-      "baseline_share": 0.0011,
-      "multiple": 35.6,
-      "state": "MERGED",
-      "reason": "basket + lst co-occur 100%, merged to basket-lst"
+      "root": "hood",
+      "launches": 27,
+      "deployers": 24,
+      "baseline_share": 0.0004,
+      "multiple": 37.7,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "cat",
+      "launches": 25,
+      "deployers": 25,
+      "baseline_share": 0.0004,
+      "multiple": 34.9,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "know",
+      "launches": 20,
+      "deployers": 15,
+      "baseline_share": 0.0004,
+      "multiple": 27.9,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "fun",
+      "launches": 18,
+      "deployers": 18,
+      "baseline_share": 0.0004,
+      "multiple": 25.1,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "rh",
+      "launches": 15,
+      "deployers": 15,
+      "baseline_share": 0.0004,
+      "multiple": 20.9,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "pons",
+      "launches": 13,
+      "deployers": 12,
+      "baseline_share": 0.0004,
+      "multiple": 18.1,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "hoe",
+      "launches": 12,
+      "deployers": 10,
+      "baseline_share": 0.0004,
+      "multiple": 16.7,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "powa",
+      "launches": 12,
+      "deployers": 11,
+      "baseline_share": 0.0004,
+      "multiple": 16.7,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "broker",
+      "launches": 11,
+      "deployers": 11,
+      "baseline_share": 0.0004,
+      "multiple": 15.3,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "hoes",
+      "launches": 11,
+      "deployers": 10,
+      "baseline_share": 0.0004,
+      "multiple": 15.3,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "cage",
+      "launches": 10,
+      "deployers": 9,
+      "baseline_share": 0.0004,
+      "multiple": 14,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "every",
+      "launches": 10,
+      "deployers": 10,
+      "baseline_share": 0.0004,
+      "multiple": 14,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "pour",
+      "launches": 10,
+      "deployers": 10,
+      "baseline_share": 0.0004,
+      "multiple": 14,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "twice",
+      "launches": 10,
+      "deployers": 9,
+      "baseline_share": 0.0004,
+      "multiple": 14,
+      "state": "WAVE",
+      "reason": ""
     },
     {
       "root": "dog",
-      "launches": 16,
-      "deployers": 16,
-      "baseline_share": 0.088,
-      "multiple": 1,
-      "state": "BELOW",
-      "reason": "dog: 1.0x over baseline < 6.0x required"
+      "launches": 9,
+      "deployers": 9,
+      "baseline_share": 0.0004,
+      "multiple": 12.6,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "perp",
+      "root": "doge",
+      "launches": 9,
+      "deployers": 9,
+      "baseline_share": 0.0004,
+      "multiple": 12.6,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "positions",
+      "launches": 9,
+      "deployers": 9,
+      "baseline_share": 0.0004,
+      "multiple": 12.6,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "robinhood",
+      "launches": 9,
+      "deployers": 7,
+      "baseline_share": 0.0004,
+      "multiple": 12.6,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "nft",
+      "launches": 8,
+      "deployers": 8,
+      "baseline_share": 0.0004,
+      "multiple": 11.2,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "forkwars",
+      "launches": 7,
+      "deployers": 7,
+      "baseline_share": 0.0004,
+      "multiple": 9.8,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "onchain",
+      "launches": 7,
+      "deployers": 6,
+      "baseline_share": 0.0004,
+      "multiple": 9.8,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "otti",
+      "launches": 7,
+      "deployers": 7,
+      "baseline_share": 0.0004,
+      "multiple": 9.8,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "runner",
+      "launches": 7,
+      "deployers": 6,
+      "baseline_share": 0.0004,
+      "multiple": 9.8,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "world",
+      "launches": 7,
+      "deployers": 7,
+      "baseline_share": 0.0004,
+      "multiple": 9.8,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "arena",
       "launches": 6,
-      "deployers": 3,
-      "baseline_share": 0.0042,
-      "multiple": 8,
-      "state": "THIN",
-      "reason": "perp: 3 deployers < 6 required"
-    },
-    {
-      "root": "rocket",
-      "launches": 5,
-      "deployers": 5,
-      "baseline_share": 0.0265,
-      "multiple": 1.1,
-      "state": "BELOW",
-      "reason": "rocket: 1.1x over baseline < 6.0x required"
-    },
-    {
-      "root": "hollow",
-      "launches": 4,
-      "deployers": 4,
+      "deployers": 6,
       "baseline_share": 0.0004,
-      "multiple": 55.9,
-      "state": "THIN",
-      "reason": "hollow: 4 launches < 5 required"
+      "multiple": 8.4,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "light",
-      "launches": 4,
-      "deployers": 4,
+      "root": "glonk",
+      "launches": 6,
+      "deployers": 6,
       "baseline_share": 0.0004,
-      "multiple": 55.9,
-      "state": "THIN",
-      "reason": "light: 4 launches < 5 required"
+      "multiple": 8.4,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "amber",
-      "launches": 3,
-      "deployers": 3,
+      "root": "mascot",
+      "launches": 6,
+      "deployers": 6,
       "baseline_share": 0.0004,
-      "multiple": 41.9,
-      "state": "THIN",
-      "reason": "amber: 3 launches < 5 required"
+      "multiple": 8.4,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "garden",
-      "launches": 3,
-      "deployers": 3,
+      "root": "microsoft",
+      "launches": 6,
+      "deployers": 6,
       "baseline_share": 0.0004,
-      "multiple": 41.9,
-      "state": "THIN",
-      "reason": "garden: 3 launches < 5 required"
+      "multiple": 8.4,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "iron",
-      "launches": 3,
-      "deployers": 3,
+      "root": "ph",
+      "launches": 6,
+      "deployers": 6,
       "baseline_share": 0.0004,
-      "multiple": 41.9,
-      "state": "THIN",
-      "reason": "iron: 3 launches < 5 required"
+      "multiple": 8.4,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "road",
-      "launches": 3,
-      "deployers": 3,
+      "root": "sexy",
+      "launches": 6,
+      "deployers": 6,
       "baseline_share": 0.0004,
-      "multiple": 41.9,
-      "state": "THIN",
-      "reason": "road: 3 launches < 5 required"
+      "multiple": 8.4,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "zora",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0006,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "zora: 3 launches < 5 required"
-    },
-    {
-      "root": "river",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.006,
-      "multiple": 2.8,
-      "state": "BELOW",
-      "reason": "river: 2.8x over baseline < 6.0x required"
-    },
-    {
-      "root": "star",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.016,
-      "multiple": 1,
-      "state": "BELOW",
-      "reason": "star: 1.0x over baseline < 6.0x required"
-    },
-    {
-      "root": "ancient",
-      "launches": 2,
-      "deployers": 2,
+      "root": "trump",
+      "launches": 6,
+      "deployers": 6,
       "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "ancient: 2 launches < 5 required"
+      "multiple": 8.4,
+      "state": "WAVE",
+      "reason": ""
     },
     {
-      "root": "arch",
-      "launches": 2,
-      "deployers": 2,
+      "root": "usdg",
+      "launches": 6,
+      "deployers": 6,
+      "baseline_share": 0.0004,
+      "multiple": 8.4,
+      "state": "WAVE",
+      "reason": ""
+    },
+    {
+      "root": "end",
+      "launches": 24,
+      "deployers": 23,
+      "baseline_share": 0.0004,
+      "multiple": 33.5,
+      "state": "MERGED",
+      "reason": "end + let co-occur 88%, merged to end-let"
+    },
+    {
+      "root": "uniswap",
+      "launches": 23,
+      "deployers": 21,
+      "baseline_share": 0.0004,
+      "multiple": 32.1,
+      "state": "MERGED",
+      "reason": "uniswap + uni co-occur 87%, merged to uniswap-uni"
+    },
+    {
+      "root": "let",
+      "launches": 21,
+      "deployers": 20,
+      "baseline_share": 0.0004,
+      "multiple": 29.3,
+      "state": "MERGED",
+      "reason": "end + let co-occur 88%, merged to end-let"
+    },
+    {
+      "root": "uni",
+      "launches": 20,
+      "deployers": 18,
       "baseline_share": 0.0004,
       "multiple": 27.9,
-      "state": "THIN",
-      "reason": "arch: 2 launches < 5 required"
+      "state": "MERGED",
+      "reason": "uniswap + uni co-occur 87%, merged to uniswap-uni"
     },
     {
-      "root": "attic",
-      "launches": 2,
-      "deployers": 2,
+      "root": "artificial",
+      "launches": 15,
+      "deployers": 15,
       "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "attic: 2 launches < 5 required"
+      "multiple": 20.9,
+      "state": "MERGED",
+      "reason": "artificial + gooner co-occur 92%, merged to artificial-gooner-intelligence"
     },
     {
-      "root": "bank",
-      "launches": 2,
-      "deployers": 2,
+      "root": "kabo",
+      "launches": 14,
+      "deployers": 14,
       "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "bank: 2 launches < 5 required"
-    },
-    {
-      "root": "barn",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "barn: 2 launches < 5 required"
-    },
-    {
-      "root": "beam",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "beam: 2 launches < 5 required"
-    },
-    {
-      "root": "bend",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "bend: 2 launches < 5 required"
-    },
-    {
-      "root": "blue",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "blue: 2 launches < 5 required"
-    },
-    {
-      "root": "branch",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "branch: 2 launches < 5 required"
-    },
-    {
-      "root": "bridge",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "bridge: 2 launches < 5 required"
-    },
-    {
-      "root": "bright",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "bright: 2 launches < 5 required"
-    },
-    {
-      "root": "busy",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "busy: 2 launches < 5 required"
-    },
-    {
-      "root": "calm",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "calm: 2 launches < 5 required"
-    },
-    {
-      "root": "cellar",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "cellar: 2 launches < 5 required"
-    },
-    {
-      "root": "clear",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "clear: 2 launches < 5 required"
-    },
-    {
-      "root": "clearing",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "clearing: 2 launches < 5 required"
-    },
-    {
-      "root": "cliff",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "cliff: 2 launches < 5 required"
-    },
-    {
-      "root": "cold",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "cold: 2 launches < 5 required"
-    },
-    {
-      "root": "complex",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "complex: 2 launches < 5 required"
-    },
-    {
-      "root": "copper",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "copper: 2 launches < 5 required"
-    },
-    {
-      "root": "court",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "court: 2 launches < 5 required"
-    },
-    {
-      "root": "crane",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "crane: 2 launches < 5 required"
-    },
-    {
-      "root": "crowded",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "crowded: 2 launches < 5 required"
-    },
-    {
-      "root": "curve",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "curve: 2 launches < 5 required"
-    },
-    {
-      "root": "dark",
-      "launches": 2,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 27.9,
-      "state": "THIN",
-      "reason": "dark: 2 launches < 5 required"
+      "multiple": 19.5,
+      "state": "MERGED",
+      "reason": "kabo + kabocoin co-occur 87%, merged to kabo-kabocoin"
     }
   ],
   "recent": [
     {
-      "name": "Restake Finance",
-      "symbol": "RSTF",
-      "deployer": "0xwallet0",
-      "address": "0x00000000",
-      "ts": "2026-09-12T20:08:12.253Z"
+      "address": "0x53366269f4031eeb0a82ee938b610fc30ab59143",
+      "name": "Layer VS Layer",
+      "symbol": "LVL",
+      "deployer": "0xb8e2c4f5f88fbd4123d892e0db64012d075131e9",
+      "block": 62262395,
+      "ts": "2026-09-13T21:05:35.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Liquid Restake",
-      "symbol": "LQR",
-      "deployer": "0xwallet1",
-      "address": "0x00000001",
-      "ts": "2026-09-12T20:07:53.254Z"
+      "address": "0x993a5c2e192f9ea878d1393fb8473269c5819ee6",
+      "name": "Mexican Peso",
+      "symbol": "MXN",
+      "deployer": "0xb365f2602efa59b876b6dac1cc5c040a67f95c82",
+      "block": 62262373,
+      "ts": "2026-09-13T21:05:33.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Restake DAO",
-      "symbol": "RDAO",
-      "deployer": "0xwallet2",
-      "address": "0x00000002",
-      "ts": "2026-09-12T20:07:34.254Z"
+      "address": "0x07c926781e27b7842ac1f23af28e963002a3da37",
+      "name": "STARTAI",
+      "symbol": "STARTAI",
+      "deployer": "0x897d2414a0b56aab02f6c13136a5c2794f6ff1fd",
+      "block": 62262362,
+      "ts": "2026-09-13T21:05:32.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "restake vault",
-      "symbol": "VLT",
-      "deployer": "0xwallet3",
-      "address": "0x00000003",
-      "ts": "2026-09-12T20:07:15.254Z"
+      "address": "0x2b99ff9d055fa4c20ccd5f0737d7c9f5e641c0de",
+      "name": "itsPePe",
+      "symbol": "Ipepe",
+      "deployer": "0x091c9be726db833736be6f1017c5b263a0f2d930",
+      "block": 62262357,
+      "ts": "2026-09-13T21:05:30.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Super Restake",
-      "symbol": "SUPR",
-      "deployer": "0xwallet4",
-      "address": "0x00000004",
-      "ts": "2026-09-12T20:06:56.254Z"
+      "address": "0x46c61491a0db9e891169460196a2d4a255881e18",
+      "name": "Black Monday",
+      "symbol": "BLACKMONDAY",
+      "deployer": "0x72686e8f1aed45d09e19f7e1ca65191327deb563",
+      "block": 62262327,
+      "ts": "2026-09-13T21:05:27.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "restake pool",
-      "symbol": "POOL",
-      "deployer": "0xwallet5",
-      "address": "0x00000005",
-      "ts": "2026-09-12T20:06:37.254Z"
+      "address": "0x89523662ee84fb6fe9b9a7f795a815ae87a8e6be",
+      "name": "Static Sentry",
+      "symbol": "SENTRY",
+      "deployer": "0x3a3c829cf2349508baf0706cca2ccb064c3af436",
+      "block": 62262325,
+      "ts": "2026-09-13T21:05:27.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Restake Labs",
-      "symbol": "LABS",
-      "deployer": "0xwallet6",
-      "address": "0x00000006",
-      "ts": "2026-09-12T20:06:18.254Z"
+      "address": "0x413724efa75b526450d794dd027008f1f21a3d0e",
+      "name": "pikapika",
+      "symbol": "PIKA",
+      "deployer": "0x5eacd1bf7a2d7c22160a05ece74a5ff1cf08f8ee",
+      "block": 62262316,
+      "ts": "2026-09-13T21:05:26.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Auto Restake",
-      "symbol": "AUTO",
-      "deployer": "0xwallet7",
-      "address": "0x00000007",
-      "ts": "2026-09-12T20:05:59.254Z"
+      "address": "0xb048281892f6e9bf0d50092b5112464f8dfe242e",
+      "name": "Obsidian Flames ETB",
+      "symbol": "ETBOBSIDIAN",
+      "deployer": "0xb365f2602efa59b876b6dac1cc5c040a67f95c82",
+      "block": 62262314,
+      "ts": "2026-09-13T21:05:26.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "restake node",
-      "symbol": "NODE",
-      "deployer": "0xwallet8",
-      "address": "0x00000008",
-      "ts": "2026-09-12T20:05:40.254Z"
+      "address": "0x0763a4388e62fa33c19fb01a080f3b366536c32c",
+      "name": "Pons Sweeney",
+      "symbol": "SWEENEY",
+      "deployer": "0x4304b28ae49e719cfefec6179c99b45624dd6cfc",
+      "block": 62262312,
+      "ts": "2026-09-13T21:05:26.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Restake One",
-      "symbol": "ONE",
-      "deployer": "0xwallet9",
-      "address": "0x00000009",
-      "ts": "2026-09-12T20:05:21.254Z"
+      "address": "0x89a16c5e4edd159f6d3240f49aefb2307888f86e",
+      "name": "Punish me daddy",
+      "symbol": "PUNISH",
+      "deployer": "0x2a992f76fecec134f15037dc7600204a16e53fac",
+      "block": 62262294,
+      "ts": "2026-09-13T21:05:24.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "restake max",
-      "symbol": "MAXR",
-      "deployer": "0xwallet10",
-      "address": "0x00000010",
-      "ts": "2026-09-12T20:05:02.254Z"
+      "address": "0x851c08d169966b1146c84c1fcb5f14f8ce900f34",
+      "name": "BrownFi V3",
+      "symbol": "BF-V3",
+      "deployer": "0x69374f8233a4069d48f8994d84052ecae6277ef5",
+      "block": 62262272,
+      "ts": "2026-09-13T21:05:22.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Restake Yield",
-      "symbol": "RYLD",
-      "deployer": "0xwallet11",
-      "address": "0x00000011",
-      "ts": "2026-09-12T20:04:43.254Z"
+      "address": "0x6348fbc1a028a493ca271ff2554a35d04618f6b1",
+      "name": "catnigga",
+      "symbol": "CATTT",
+      "deployer": "0xec1aafd159db54e31e7e063f6ed27a61094c5cab",
+      "block": 62262272,
+      "ts": "2026-09-13T21:05:22.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "LST Basket",
-      "symbol": "LSTB",
-      "deployer": "0xmerge0",
-      "address": "0x00000012",
-      "ts": "2026-09-12T20:04:24.254Z"
+      "address": "0xfc5df5721540b76308376fc2dd137a6127b26706",
+      "name": "Extra Thick Hoes",
+      "symbol": "ETH",
+      "deployer": "0xce8543738f33676c6963c78db41b3bb881beebc9",
+      "block": 62262185,
+      "ts": "2026-09-13T21:05:13.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Basket LST",
-      "symbol": "BLST",
-      "deployer": "0xmerge1",
-      "address": "0x00000013",
-      "ts": "2026-09-12T20:04:05.254Z"
+      "address": "0xd846ad6613566b36db6620653fc6c255c5d44633",
+      "name": "HOODGHOST",
+      "symbol": "GHOO",
+      "deployer": "0x445ff42a0586f3010c731b9c11c83a15b141627c",
+      "block": 62262184,
+      "ts": "2026-09-13T21:05:13.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "lst basket pro",
-      "symbol": "PROB",
-      "deployer": "0xmerge2",
-      "address": "0x00000014",
-      "ts": "2026-09-12T20:03:46.254Z"
+      "address": "0x0b81784e7afc38f051ff326bb449852498896927",
+      "name": "Prowl",
+      "symbol": "PROWL",
+      "deployer": "0x1b843839a7363929eaff1bd574cdd181ee20c053",
+      "block": 62262102,
+      "ts": "2026-09-13T21:05:04.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "LST basket vault",
-      "symbol": "VBSK",
-      "deployer": "0xmerge3",
-      "address": "0x00000015",
-      "ts": "2026-09-12T20:03:27.254Z"
+      "address": "0x9c9daa5e4db828de6e14deb35019930ab68b630a",
+      "name": "Naruto",
+      "symbol": "NARUTO",
+      "deployer": "0x6db45908b3718b1b86a2e14934f8dfcd0cd92b64",
+      "block": 62262077,
+      "ts": "2026-09-13T21:05:01.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "basket lst index",
-      "symbol": "IDXB",
-      "deployer": "0xmerge4",
-      "address": "0x00000016",
-      "ts": "2026-09-12T20:03:08.254Z"
+      "address": "0xc1a04fc9047ea6c565a2cbbea4a485d3a394b845",
+      "name": "Hylo.so",
+      "symbol": "HYLO",
+      "deployer": "0xf335a35d2c0d3900b6cfff392081a679b61260db",
+      "block": 62262077,
+      "ts": "2026-09-13T21:05:01.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "LST Basket Two",
-      "symbol": "TWOB",
-      "deployer": "0xmerge5",
-      "address": "0x00000017",
-      "ts": "2026-09-12T20:02:49.254Z"
+      "address": "0x3d10b7c52b3ca6be5dd307c4a6b192b501018d5a",
+      "name": "Oleum Noir",
+      "symbol": "OLEUM",
+      "deployer": "0x63227436b39989d2562d59b204b8f2f2f8ba995d",
+      "block": 62262025,
+      "ts": "2026-09-13T21:04:56.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "basket of lst",
-      "symbol": "OFLB",
-      "deployer": "0xmerge6",
-      "address": "0x00000018",
-      "ts": "2026-09-12T20:02:30.254Z"
+      "address": "0x0a99d96322501139835199571012399679f6490c",
+      "name": "BRAVE1",
+      "symbol": "BRAVE1",
+      "deployer": "0x4156f5132057f52c97e95e35fc60066e9f6eea98",
+      "block": 62262017,
+      "ts": "2026-09-13T21:04:55.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Perp Dex",
-      "symbol": "PDEX",
-      "deployer": "0xperp0",
-      "address": "0x00000019",
-      "ts": "2026-09-12T20:02:11.254Z"
+      "address": "0xa3da79681c5e254841b57120c0e233d0998722bd",
+      "name": "Universe",
+      "symbol": "UNIV",
+      "deployer": "0x0afc4e73473eedcdb0b7f1e353ba7c55b4b25ee9",
+      "block": 62261998,
+      "ts": "2026-09-13T21:04:54.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "perp trade",
-      "symbol": "PTRD",
-      "deployer": "0xperp1",
-      "address": "0x00000020",
-      "ts": "2026-09-12T20:01:52.254Z"
+      "address": "0x73eb82d1fafce519082ff57791b2c07ffc47bcb2",
+      "name": "Coke",
+      "symbol": "COKE",
+      "deployer": "0x8beba629e41899df8838a7d70d8bf7d63f1df44d",
+      "block": 62261952,
+      "ts": "2026-09-13T21:04:49.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Perp Engine",
-      "symbol": "PENG",
-      "deployer": "0xperp2",
-      "address": "0x00000021",
-      "ts": "2026-09-12T20:01:33.254Z"
+      "address": "0xb6aae4d6471be8df879efe4e76bede2459f87cb0",
+      "name": "Fireoar Monarch",
+      "symbol": "PYROLION",
+      "deployer": "0x205a7627289fc67709d9ebcc620b357c3efd7ab5",
+      "block": 62261909,
+      "ts": "2026-09-13T21:04:44.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "perp max",
-      "symbol": "PMAX",
-      "deployer": "0xperp0",
-      "address": "0x00000022",
-      "ts": "2026-09-12T20:01:14.254Z"
+      "address": "0x3dfc7a461054bdedd05a2db0c620ba467abdb61e",
+      "name": "SWARM03",
+      "symbol": "SW03",
+      "deployer": "0x1b0739c001d71664cc8d24ebdfd031fae60ed20d",
+      "block": 62261884,
+      "ts": "2026-09-13T21:04:42.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Perp One",
-      "symbol": "PONE",
-      "deployer": "0xperp1",
-      "address": "0x00000023",
-      "ts": "2026-09-12T20:00:55.254Z"
+      "address": "0xe4a931d6a9f979e7c6a25e4da978fcdfd6fb6767",
+      "name": "Goalhoodz",
+      "symbol": "GOAL",
+      "deployer": "0xbd1901f366ee37d6efa1b9f9148b8542b29a9cae",
+      "block": 62261820,
+      "ts": "2026-09-13T21:04:38.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "perp zero",
-      "symbol": "PZRO",
-      "deployer": "0xperp2",
-      "address": "0x00000024",
-      "ts": "2026-09-12T20:00:36.254Z"
+      "address": "0x04c5ba6d31e674b689dd663b31b6ee6f94561e6d",
+      "name": "clear.fun",
+      "symbol": "CLEAR",
+      "deployer": "0x4c68506835bb46aba45b0e0036cf8b0b86069f9a",
+      "block": 62261810,
+      "ts": "2026-09-13T21:04:37.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Zora Mint",
-      "symbol": "ZMNT",
-      "deployer": "0xzora0",
-      "address": "0x00000025",
-      "ts": "2026-09-12T20:00:17.254Z"
+      "address": "0x2e45968ab6eb619f07b0a7a6969f53d467222833",
+      "name": "Big Titty Coinour",
+      "symbol": "$BTC",
+      "deployer": "0x5ded2968b70bc1d3fc9f5377cc2550ba3620c25d",
+      "block": 62261794,
+      "ts": "2026-09-13T21:04:35.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "zora drop",
-      "symbol": "ZDRP",
-      "deployer": "0xzora1",
-      "address": "0x00000026",
-      "ts": "2026-09-12T19:59:58.254Z"
+      "address": "0x4796de29fc7a3066d73b5d63ff71ad6cf2446cdf",
+      "name": "Russian Ruble",
+      "symbol": "RUB",
+      "deployer": "0xb365f2602efa59b876b6dac1cc5c040a67f95c82",
+      "block": 62261756,
+      "ts": "2026-09-13T21:04:31.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Zora Pass",
-      "symbol": "ZPAS",
-      "deployer": "0xzora2",
-      "address": "0x00000027",
-      "ts": "2026-09-12T19:59:39.254Z"
+      "address": "0x9f77f51798c88afb4f675a2292ed21f6dbb917a5",
+      "name": "DND",
+      "symbol": "DND",
+      "deployer": "0xe90dba5201eebfd03e0b5df5946d43c2e955f587",
+      "block": 62261733,
+      "ts": "2026-09-13T21:04:29.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Dog Money",
-      "symbol": "DGMN",
-      "deployer": "0xdog0",
-      "address": "0x00000028",
-      "ts": "2026-09-12T19:59:20.254Z"
+      "address": "0x704e1fa392df4d8414e07cdfdfd2f8ab024ffb4f",
+      "name": "BoltRPC",
+      "symbol": "BOLT",
+      "deployer": "0xacede22ca3528cd1f2bc93d474e7cbf590ef5207",
+      "block": 62261711,
+      "ts": "2026-09-13T21:04:26.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Space Dog",
-      "symbol": "SPDG",
-      "deployer": "0xdog1",
-      "address": "0x00000029",
-      "ts": "2026-09-12T19:59:01.254Z"
+      "address": "0x6a2e3567643d733573b8ac8f87dd800156d6dd2d",
+      "name": "X Link",
+      "symbol": "XL",
+      "deployer": "0xd8c20024fcb068829070779c7beed6a98ebbc0e5",
+      "block": 62261684,
+      "ts": "2026-09-13T21:04:24.000Z",
+      "ts_exact": true,
+      "direct": true
     },
     {
-      "name": "dog inu",
-      "symbol": "DGIN",
-      "deployer": "0xdog2",
-      "address": "0x00000030",
-      "ts": "2026-09-12T19:58:42.254Z"
+      "address": "0xdd92e5dd86b163ed01737bf5cd445e77692b7d8d",
+      "name": "Uniswap V2",
+      "symbol": "UNI-V2",
+      "deployer": "0xd8c20024fcb068829070779c7beed6a98ebbc0e5",
+      "block": 62261684,
+      "ts": "2026-09-13T21:04:24.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Mega Dog",
-      "symbol": "MGDG",
-      "deployer": "0xdog3",
-      "address": "0x00000031",
-      "ts": "2026-09-12T19:58:23.254Z"
+      "address": "0xabbb0278d5517d753e1109b653c6f661c82c15af",
+      "name": "Human Cordon",
+      "symbol": "CORDON",
+      "deployer": "0x5f5e9f326526f0f65fca5ed67792a8b8dc383f83",
+      "block": 62261665,
+      "ts": "2026-09-13T21:04:22.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "dog world",
-      "symbol": "DGWD",
-      "deployer": "0xdog4",
-      "address": "0x00000032",
-      "ts": "2026-09-12T19:58:04.254Z"
+      "address": "0xa56d6ca1ef0c4eb7f79c6fe0b82a51869efbddef",
+      "name": "Let's End AI",
+      "symbol": "ENDAI",
+      "deployer": "0x8e806609fd9ea0c145a7a1d7898889385848fe57",
+      "block": 62261534,
+      "ts": "2026-09-13T21:04:08.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Good Dog",
-      "symbol": "GDDG",
-      "deployer": "0xdog5",
-      "address": "0x00000033",
-      "ts": "2026-09-12T19:57:45.254Z"
+      "address": "0x9412c3e3d996e65858736752af6eccaaa35951a1",
+      "name": "Stock6900",
+      "symbol": "Stock6900",
+      "deployer": "0xc31f79c14a6754b042e68bdbd62010261838d38d",
+      "block": 62261479,
+      "ts": "2026-09-13T21:04:03.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Dog Star",
-      "symbol": "DGST",
-      "deployer": "0xdog6",
-      "address": "0x00000034",
-      "ts": "2026-09-12T19:57:26.254Z"
+      "address": "0x02ce6203cb4d68c07ea586059bbcb05e1aebfc94",
+      "name": "Little Hood",
+      "symbol": "Little",
+      "deployer": "0x6ee8be58db8b9c93f15f46735a6e9d9ca493c4aa",
+      "block": 62261438,
+      "ts": "2026-09-13T21:03:59.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "dog planet",
-      "symbol": "DGPL",
-      "deployer": "0xdog7",
-      "address": "0x00000035",
-      "ts": "2026-09-12T19:57:07.254Z"
+      "address": "0x0ea460e2dfd70e075cc29001303dcfc3960baf9c",
+      "name": "Lund",
+      "symbol": "Lund",
+      "deployer": "0x1540f72bbb2e5f1eacd518385c729dec97b8d94c",
+      "block": 62261433,
+      "ts": "2026-09-13T21:03:58.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Laser Dog",
-      "symbol": "LSDG",
-      "deployer": "0xdog8",
-      "address": "0x00000036",
-      "ts": "2026-09-12T19:56:48.254Z"
+      "address": "0x1c6a923818e67293a95c9cb2f2baed01d64b3244",
+      "name": "Lead Outriders",
+      "symbol": "OUTRIDER",
+      "deployer": "0x09864a2048989a3f8790cac9b0e1660450c2ef6a",
+      "block": 62261411,
+      "ts": "2026-09-13T21:03:56.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "dog king",
-      "symbol": "DGKG",
-      "deployer": "0xdog9",
-      "address": "0x00000037",
-      "ts": "2026-09-12T19:56:29.254Z"
+      "address": "0x07e8cc9d9444e5befdf0cf9d27b356363293d3e9",
+      "name": "Don't Touch Me Baby",
+      "symbol": "DTMB",
+      "deployer": "0x2228688ef208973aa775e1a05fcce3102312c0b1",
+      "block": 62261408,
+      "ts": "2026-09-13T21:03:56.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "Happy Dog",
-      "symbol": "HPDG",
-      "deployer": "0xdog10",
-      "address": "0x00000038",
-      "ts": "2026-09-12T19:56:10.254Z"
+      "address": "0x8ca0d8b0a3505039faa93b234059370a6db58000",
+      "name": "clear.fun",
+      "symbol": "CLEAR",
+      "deployer": "0x7c2317a3ede54ab4e50b10f0b6f382f8fa341b2b",
+      "block": 62261338,
+      "ts": "2026-09-13T21:03:48.000Z",
+      "ts_exact": true,
+      "direct": false
     },
     {
-      "name": "dog city",
-      "symbol": "DGCT",
-      "deployer": "0xdog11",
-      "address": "0x00000039",
-      "ts": "2026-09-12T19:55:51.254Z"
+      "address": "0xc1a04ef75fb10507598a79312d777466e0224da8",
+      "name": "Try Payle",
+      "symbol": "PAYLE",
+      "deployer": "0xe37c58f219efb1e67743a2f93640390deb290825",
+      "block": 62261331,
+      "ts": "2026-09-13T21:03:48.000Z",
+      "ts_exact": true,
+      "direct": false
     }
   ]
 }
