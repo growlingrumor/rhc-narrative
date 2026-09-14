@@ -63,5 +63,18 @@
     "top_wallets": 7,
     "multiple": 66.3,
     "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-09-14T16:47:21.000Z",
+    "window_hours": 1,
+    "launches": 2439,
+    "deployers": 1530,
+    "roots": 2540,
+    "narratives": 66,
+    "top": "robinhood",
+    "top_launches": 56,
+    "top_wallets": 35,
+    "multiple": 57.4,
+    "baseline_ready": false
   }
 ]
