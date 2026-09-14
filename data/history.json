@@ -37,5 +37,18 @@
     "top_wallets": 12,
     "multiple": 82.3,
     "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-09-14T05:44:37.000Z",
+    "window_hours": 1,
+    "launches": 715,
+    "deployers": 486,
+    "roots": 914,
+    "narratives": 13,
+    "top": "human",
+    "top_launches": 26,
+    "top_wallets": 17,
+    "multiple": 90.9,
+    "baseline_ready": false
   }
 ]
