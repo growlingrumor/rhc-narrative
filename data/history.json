@@ -89,5 +89,18 @@
     "top_wallets": 18,
     "multiple": 64.2,
     "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-09-14T23:25:36.000Z",
+    "window_hours": 1,
+    "launches": 3885,
+    "deployers": 3168,
+    "roots": 3777,
+    "narratives": 37,
+    "top": "jonze",
+    "top_launches": 434,
+    "top_wallets": 422,
+    "multiple": 279.3,
+    "baseline_ready": false
   }
 ]
