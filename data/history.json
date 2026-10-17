@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-10-13T03:34:41.000Z",
-    "window_hours": 1,
-    "launches": 365,
-    "deployers": 231,
-    "roots": 431,
-    "narratives": 5,
-    "top": "black",
-    "top_launches": 26,
-    "top_wallets": 26,
-    "multiple": 178.1,
-    "baseline_ready": false
-  },
-  {
     "closed_at": "2026-10-13T11:01:02.000Z",
     "window_hours": 1,
     "launches": 199,
@@ -309,6 +296,19 @@
     "top_launches": 9,
     "top_wallets": 7,
     "multiple": 56.8,
+    "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-10-17T05:45:18.000Z",
+    "window_hours": 1,
+    "launches": 315,
+    "deployers": 236,
+    "roots": 379,
+    "narratives": 7,
+    "top": "sexcoin",
+    "top_launches": 9,
+    "top_wallets": 9,
+    "multiple": 71.4,
     "baseline_ready": false
   }
 ]
