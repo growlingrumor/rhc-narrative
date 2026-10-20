@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-10-17T05:45:18.000Z",
-    "window_hours": 1,
-    "launches": 315,
-    "deployers": 236,
-    "roots": 379,
-    "narratives": 7,
-    "top": "sexcoin",
-    "top_launches": 9,
-    "top_wallets": 9,
-    "multiple": 71.4,
-    "baseline_ready": false
-  },
-  {
     "closed_at": "2026-10-17T09:42:08.000Z",
     "window_hours": 1,
     "launches": 349,
@@ -309,6 +296,19 @@
     "top_launches": 40,
     "top_wallets": 10,
     "multiple": 126.3,
+    "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-10-20T19:36:54.000Z",
+    "window_hours": 1,
+    "launches": 631,
+    "deployers": 396,
+    "roots": 733,
+    "narratives": 14,
+    "top": "creora",
+    "top_launches": 33,
+    "top_wallets": 27,
+    "multiple": 130.7,
     "baseline_ready": false
   }
 ]
