@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-10-18T21:09:04.000Z",
-    "window_hours": 1,
-    "launches": 479,
-    "deployers": 290,
-    "roots": 561,
-    "narratives": 8,
-    "top": "usdg",
-    "top_launches": 15,
-    "top_wallets": 12,
-    "multiple": 78.3,
-    "baseline_ready": false
-  },
-  {
     "closed_at": "2026-10-18T23:05:07.000Z",
     "window_hours": 1,
     "launches": 459,
@@ -309,6 +296,19 @@
     "top_launches": 53,
     "top_wallets": 14,
     "multiple": 200.2,
+    "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-10-22T22:31:57.000Z",
+    "window_hours": 1,
+    "launches": 384,
+    "deployers": 255,
+    "roots": 476,
+    "narratives": 9,
+    "top": "bitwater",
+    "top_launches": 11,
+    "top_wallets": 11,
+    "multiple": 71.6,
     "baseline_ready": false
   }
 ]
