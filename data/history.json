@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-10-24T13:32:59.000Z",
-    "window_hours": 1,
-    "launches": 393,
-    "deployers": 279,
-    "roots": 482,
-    "narratives": 7,
-    "top": "opensolana",
-    "top_launches": 23,
-    "top_wallets": 23,
-    "multiple": 146.3,
-    "baseline_ready": false
-  },
-  {
     "closed_at": "2026-10-24T16:53:28.000Z",
     "window_hours": 1,
     "launches": 446,
@@ -309,6 +296,19 @@
     "top_launches": 75,
     "top_wallets": 75,
     "multiple": 492.1,
+    "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-10-28T14:16:49.000Z",
+    "window_hours": 1,
+    "launches": 716,
+    "deployers": 473,
+    "roots": 745,
+    "narratives": 13,
+    "top": "larp",
+    "top_launches": 66,
+    "top_wallets": 66,
+    "multiple": 230.4,
     "baseline_ready": false
   }
 ]
