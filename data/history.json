@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-10-24T09:32:58.000Z",
-    "window_hours": 1,
-    "launches": 319,
-    "deployers": 246,
-    "roots": 412,
-    "narratives": 7,
-    "top": "nft",
-    "top_launches": 7,
-    "top_wallets": 7,
-    "multiple": 54.9,
-    "baseline_ready": false
-  },
-  {
     "closed_at": "2026-10-24T13:32:59.000Z",
     "window_hours": 1,
     "launches": 393,
@@ -309,6 +296,19 @@
     "top_launches": 18,
     "top_wallets": 10,
     "multiple": 103.4,
+    "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-10-28T07:28:48.000Z",
+    "window_hours": 1,
+    "launches": 381,
+    "deployers": 294,
+    "roots": 395,
+    "narratives": 8,
+    "top": "robotaxi",
+    "top_launches": 75,
+    "top_wallets": 75,
+    "multiple": 492.1,
     "baseline_ready": false
   }
 ]
