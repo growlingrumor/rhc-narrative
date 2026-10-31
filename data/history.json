@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-10-26T06:21:44.000Z",
-    "window_hours": 1,
-    "launches": 230,
-    "deployers": 168,
-    "roots": 317,
-    "narratives": 5,
-    "top": "usdg",
-    "top_launches": 10,
-    "top_wallets": 10,
-    "multiple": 108.7,
-    "baseline_ready": false
-  },
-  {
     "closed_at": "2026-10-26T13:21:58.000Z",
     "window_hours": 1,
     "launches": 526,
@@ -309,6 +296,19 @@
     "top_launches": 41,
     "top_wallets": 40,
     "multiple": 214.9,
+    "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-10-31T06:54:33.000Z",
+    "window_hours": 1,
+    "launches": 278,
+    "deployers": 191,
+    "roots": 363,
+    "narratives": 7,
+    "top": "usdg",
+    "top_launches": 9,
+    "top_wallets": 9,
+    "multiple": 80.9,
     "baseline_ready": false
   }
 ]
