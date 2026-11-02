@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-10-28T07:28:48.000Z",
-    "window_hours": 1,
-    "launches": 381,
-    "deployers": 294,
-    "roots": 395,
-    "narratives": 8,
-    "top": "robotaxi",
-    "top_launches": 75,
-    "top_wallets": 75,
-    "multiple": 492.1,
-    "baseline_ready": false
-  },
-  {
     "closed_at": "2026-10-28T14:16:49.000Z",
     "window_hours": 1,
     "launches": 716,
@@ -310,5 +297,18 @@
     "top_wallets": 17,
     "multiple": 110.1,
     "baseline_ready": false
+  },
+  {
+    "closed_at": "2026-11-02T05:57:10.000Z",
+    "window_hours": 1,
+    "launches": 318,
+    "deployers": 213,
+    "roots": 416,
+    "narratives": 5,
+    "top": "peace",
+    "top_launches": 14,
+    "top_wallets": 14,
+    "multiple": 110.1,
+    "baseline_ready": true
   }
 ]
