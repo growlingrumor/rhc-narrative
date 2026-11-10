@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-04T09:46:24.000Z",
-    "window_hours": 1,
-    "launches": 408,
-    "deployers": 239,
-    "roots": 501,
-    "narratives": 3,
-    "top": "amd",
-    "top_launches": 11,
-    "top_wallets": 11,
-    "multiple": 67.4,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-04T17:33:32.000Z",
     "window_hours": 1,
     "launches": 663,
@@ -309,6 +296,19 @@
     "top_launches": 6,
     "top_wallets": 6,
     "multiple": 35.2,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-10T02:58:18.000Z",
+    "window_hours": 1,
+    "launches": 270,
+    "deployers": 194,
+    "roots": 385,
+    "narratives": 2,
+    "top": "xcoin",
+    "top_launches": 7,
+    "top_wallets": 7,
+    "multiple": 64.8,
     "baseline_ready": true
   }
 ]
