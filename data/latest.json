@@ -2,24 +2,24 @@
   "schema": 1,
   "chain": "robinhood",
   "chain_id": 4663,
-  "closed_at": "2026-11-11T09:57:42.000Z",
-  "opened_at": "2026-11-11T08:57:42.000Z",
+  "closed_at": "2026-11-11T17:39:44.000Z",
+  "opened_at": "2026-11-11T16:39:44.000Z",
   "window_hours": 1,
-  "head_block": 111614652,
-  "start_block": 111580400,
-  "blocks_scanned": 34252,
+  "head_block": 111881452,
+  "start_block": 111846158,
+  "blocks_scanned": 35294,
   "source": "https://rpc.mainnet.chain.robinhood.com",
   "complete": true,
-  "launches": 326,
-  "unnamed_contracts": 9,
-  "via_factory": 313,
+  "launches": 466,
+  "unnamed_contracts": 14,
+  "via_factory": 452,
   "no_receipt": 0,
-  "candidates": 335,
-  "mint_events": 12412,
-  "deployers": 198,
-  "roots": 423,
-  "cleared_multiple": 287,
-  "failed_gates": 283,
+  "candidates": 480,
+  "mint_events": 23323,
+  "deployers": 286,
+  "roots": 654,
+  "cleared_multiple": 63,
+  "failed_gates": 61,
   "baseline_ready": true,
   "baseline_days": 14,
   "config": {
@@ -35,779 +35,778 @@
     "root_max_length": 14
   },
   "themes": [
-    "cashtag",
-    "intelligence-orbyn",
-    "santa"
+    "cash",
+    "coastr"
   ],
   "top": {
-    "root": "cashtag",
-    "launches": 8,
-    "deployers": 8,
+    "root": "coastr",
+    "launches": 10,
+    "deployers": 10,
     "baseline_share": 0.0004,
-    "multiple": 61.3,
+    "multiple": 53.6,
     "state": "WAVE",
     "reason": ""
   },
   "rows": [
     {
-      "root": "cashtag",
-      "launches": 8,
-      "deployers": 8,
+      "root": "coastr",
+      "launches": 10,
+      "deployers": 10,
       "baseline_share": 0.0004,
-      "multiple": 61.3,
+      "multiple": 53.6,
       "state": "WAVE",
       "reason": ""
     },
     {
-      "root": "santa",
+      "root": "cash",
       "launches": 6,
       "deployers": 6,
-      "baseline_share": 0.0004,
-      "multiple": 46,
+      "baseline_share": 0.0021,
+      "multiple": 6.1,
       "state": "WAVE",
       "reason": ""
-    },
-    {
-      "root": "orbyn",
-      "launches": 7,
-      "deployers": 7,
-      "baseline_share": 0.0004,
-      "multiple": 53.7,
-      "state": "MERGED",
-      "reason": "intelligence + orbyn co-occur 100%, merged to intelligence-orbyn"
-    },
-    {
-      "root": "intelligence",
-      "launches": 7,
-      "deployers": 7,
-      "baseline_share": 0.0036,
-      "multiple": 6,
-      "state": "MERGED",
-      "reason": "intelligence + orbyn co-occur 100%, merged to intelligence-orbyn"
-    },
-    {
-      "root": "uniswap",
-      "launches": 19,
-      "deployers": 16,
-      "baseline_share": 0.0509,
-      "multiple": 1.1,
-      "state": "BELOW",
-      "reason": "uniswap: 1.1x over baseline < 6.0x required"
-    },
-    {
-      "root": "uni",
-      "launches": 16,
-      "deployers": 13,
-      "baseline_share": 0.0424,
-      "multiple": 1.2,
-      "state": "BELOW",
-      "reason": "uni: 1.2x over baseline < 6.0x required"
     },
     {
       "root": "robinhood",
-      "launches": 15,
-      "deployers": 5,
+      "launches": 26,
+      "deployers": 11,
       "baseline_share": 0.0513,
+      "multiple": 1.1,
+      "state": "BELOW",
+      "reason": "robinhood: 1.1x over baseline < 6.0x required"
+    },
+    {
+      "root": "uniswap",
+      "launches": 22,
+      "deployers": 20,
+      "baseline_share": 0.0509,
       "multiple": 0.9,
       "state": "BELOW",
-      "reason": "robinhood: 0.9x over baseline < 6.0x required"
+      "reason": "uniswap: 0.9x over baseline < 6.0x required"
     },
     {
-      "root": "nft",
-      "launches": 11,
-      "deployers": 11,
-      "baseline_share": 0.0201,
-      "multiple": 1.7,
+      "root": "uni",
+      "launches": 18,
+      "deployers": 17,
+      "baseline_share": 0.0424,
+      "multiple": 0.9,
       "state": "BELOW",
-      "reason": "nft: 1.7x over baseline < 6.0x required"
-    },
-    {
-      "root": "positions",
-      "launches": 10,
-      "deployers": 10,
-      "baseline_share": 0.0167,
-      "multiple": 1.8,
-      "state": "BELOW",
-      "reason": "positions: 1.8x over baseline < 6.0x required"
+      "reason": "uni: 0.9x over baseline < 6.0x required"
     },
     {
       "root": "usdg",
-      "launches": 10,
-      "deployers": 10,
+      "launches": 12,
+      "deployers": 12,
       "baseline_share": 0.0203,
-      "multiple": 1.5,
+      "multiple": 1.3,
       "state": "BELOW",
-      "reason": "usdg: 1.5x over baseline < 6.0x required"
+      "reason": "usdg: 1.3x over baseline < 6.0x required"
+    },
+    {
+      "root": "dump",
+      "launches": 11,
+      "deployers": 1,
+      "baseline_share": 0.0004,
+      "multiple": 59,
+      "state": "THIN",
+      "reason": "dump: 1 deployers < 6 required"
+    },
+    {
+      "root": "frump",
+      "launches": 11,
+      "deployers": 1,
+      "baseline_share": 0.0004,
+      "multiple": 59,
+      "state": "THIN",
+      "reason": "frump: 1 deployers < 6 required"
+    },
+    {
+      "root": "frog",
+      "launches": 11,
+      "deployers": 1,
+      "baseline_share": 0.0019,
+      "multiple": 12.4,
+      "state": "THIN",
+      "reason": "frog: 1 deployers < 6 required"
+    },
+    {
+      "root": "hood",
+      "launches": 9,
+      "deployers": 8,
+      "baseline_share": 0.0108,
+      "multiple": 1.8,
+      "state": "BELOW",
+      "reason": "hood: 1.8x over baseline < 6.0x required"
     },
     {
       "root": "cat",
       "launches": 9,
-      "deployers": 8,
+      "deployers": 7,
       "baseline_share": 0.013,
+      "multiple": 1.5,
+      "state": "BELOW",
+      "reason": "cat: 1.5x over baseline < 6.0x required"
+    },
+    {
+      "root": "chop",
+      "launches": 8,
+      "deployers": 7,
+      "baseline_share": 0.0041,
+      "multiple": 4.2,
+      "state": "BELOW",
+      "reason": "chop: 4.2x over baseline < 6.0x required"
+    },
+    {
+      "root": "cow",
+      "launches": 7,
+      "deployers": 6,
+      "baseline_share": 0.0072,
       "multiple": 2.1,
       "state": "BELOW",
-      "reason": "cat: 2.1x over baseline < 6.0x required"
+      "reason": "cow: 2.1x over baseline < 6.0x required"
     },
     {
-      "root": "aero",
+      "root": "positions",
       "launches": 7,
-      "deployers": 3,
-      "baseline_share": 0.0056,
-      "multiple": 3.8,
+      "deployers": 7,
+      "baseline_share": 0.0167,
+      "multiple": 0.9,
       "state": "BELOW",
-      "reason": "aero: 3.8x over baseline < 6.0x required"
+      "reason": "positions: 0.9x over baseline < 6.0x required"
     },
     {
-      "root": "rigsby",
+      "root": "inc",
+      "launches": 6,
+      "deployers": 5,
+      "baseline_share": 0.0057,
+      "multiple": 2.3,
+      "state": "BELOW",
+      "reason": "inc: 2.3x over baseline < 6.0x required"
+    },
+    {
+      "root": "nft",
+      "launches": 6,
+      "deployers": 6,
+      "baseline_share": 0.0201,
+      "multiple": 0.6,
+      "state": "BELOW",
+      "reason": "nft: 0.6x over baseline < 6.0x required"
+    },
+    {
+      "root": "cashcow",
       "launches": 5,
       "deployers": 5,
       "baseline_share": 0.0004,
-      "multiple": 38.3,
+      "multiple": 26.8,
       "state": "THIN",
-      "reason": "rigsby: 5 deployers < 6 required"
+      "reason": "cashcow: 5 deployers < 6 required"
     },
     {
-      "root": "amm",
+      "root": "over",
+      "launches": 5,
+      "deployers": 2,
+      "baseline_share": 0.0011,
+      "multiple": 9.8,
+      "state": "THIN",
+      "reason": "over: 2 deployers < 6 required"
+    },
+    {
+      "root": "robin",
       "launches": 5,
       "deployers": 3,
-      "baseline_share": 0.0062,
+      "baseline_share": 0.0017,
+      "multiple": 6.3,
+      "state": "THIN",
+      "reason": "robin: 3 deployers < 6 required"
+    },
+    {
+      "root": "brownfi",
+      "launches": 5,
+      "deployers": 5,
+      "baseline_share": 0.0025,
+      "multiple": 4.3,
+      "state": "BELOW",
+      "reason": "brownfi: 4.3x over baseline < 6.0x required"
+    },
+    {
+      "root": "bf",
+      "launches": 5,
+      "deployers": 5,
+      "baseline_share": 0.0027,
+      "multiple": 4,
+      "state": "BELOW",
+      "reason": "bf: 4.0x over baseline < 6.0x required"
+    },
+    {
+      "root": "one",
+      "launches": 5,
+      "deployers": 5,
+      "baseline_share": 0.0043,
       "multiple": 2.5,
       "state": "BELOW",
-      "reason": "amm: 2.5x over baseline < 6.0x required"
+      "reason": "one: 2.5x over baseline < 6.0x required"
     },
     {
       "root": "agent",
       "launches": 5,
       "deployers": 5,
       "baseline_share": 0.0068,
-      "multiple": 2.3,
+      "multiple": 1.6,
       "state": "BELOW",
-      "reason": "agent: 2.3x over baseline < 6.0x required"
+      "reason": "agent: 1.6x over baseline < 6.0x required"
     },
     {
-      "root": "volatile",
+      "root": "staked",
       "launches": 5,
+      "deployers": 5,
+      "baseline_share": 0.0069,
+      "multiple": 1.6,
+      "state": "BELOW",
+      "reason": "staked: 1.6x over baseline < 6.0x required"
+    },
+    {
+      "root": "weth",
+      "launches": 5,
+      "deployers": 5,
+      "baseline_share": 0.0073,
+      "multiple": 1.5,
+      "state": "BELOW",
+      "reason": "weth: 1.5x over baseline < 6.0x required"
+    },
+    {
+      "root": "another",
+      "launches": 4,
+      "deployers": 2,
+      "baseline_share": 0.0004,
+      "multiple": 21.5,
+      "state": "THIN",
+      "reason": "another: 4 launches < 5 required"
+    },
+    {
+      "root": "bags",
+      "launches": 4,
+      "deployers": 4,
+      "baseline_share": 0.0004,
+      "multiple": 21.5,
+      "state": "THIN",
+      "reason": "bags: 4 launches < 5 required"
+    },
+    {
+      "root": "otr",
+      "launches": 4,
+      "deployers": 2,
+      "baseline_share": 0.0004,
+      "multiple": 21.5,
+      "state": "THIN",
+      "reason": "otr: 4 launches < 5 required"
+    },
+    {
+      "root": "ring",
+      "launches": 4,
       "deployers": 3,
-      "baseline_share": 0.0083,
+      "baseline_share": 0.0004,
+      "multiple": 21.5,
+      "state": "THIN",
+      "reason": "ring: 4 launches < 5 required"
+    },
+    {
+      "root": "trust",
+      "launches": 4,
+      "deployers": 2,
+      "baseline_share": 0.0036,
+      "multiple": 2.4,
+      "state": "BELOW",
+      "reason": "trust: 2.4x over baseline < 6.0x required"
+    },
+    {
+      "root": "ctr",
+      "launches": 4,
+      "deployers": 1,
+      "baseline_share": 0.0049,
       "multiple": 1.8,
       "state": "BELOW",
-      "reason": "volatile: 1.8x over baseline < 6.0x required"
+      "reason": "ctr: 1.8x over baseline < 6.0x required"
     },
     {
-      "root": "cult",
+      "root": "prd",
       "launches": 4,
-      "deployers": 4,
-      "baseline_share": 0.0004,
-      "multiple": 30.7,
-      "state": "THIN",
-      "reason": "cult: 4 launches < 5 required"
-    },
-    {
-      "root": "hat",
-      "launches": 4,
-      "deployers": 4,
-      "baseline_share": 0.0004,
-      "multiple": 30.7,
-      "state": "THIN",
-      "reason": "hat: 4 launches < 5 required"
-    },
-    {
-      "root": "ketamine",
-      "launches": 4,
-      "deployers": 2,
-      "baseline_share": 0.0004,
-      "multiple": 30.7,
-      "state": "THIN",
-      "reason": "ketamine: 4 launches < 5 required"
-    },
-    {
-      "root": "flying",
-      "launches": 4,
-      "deployers": 2,
-      "baseline_share": 0.0005,
-      "multiple": 24.5,
-      "state": "THIN",
-      "reason": "flying: 4 launches < 5 required"
-    },
-    {
-      "root": "chaingreets",
-      "launches": 4,
-      "deployers": 2,
-      "baseline_share": 0.0009,
-      "multiple": 13.6,
-      "state": "THIN",
-      "reason": "chaingreets: 4 launches < 5 required"
-    },
-    {
-      "root": "trench",
-      "launches": 4,
-      "deployers": 3,
-      "baseline_share": 0.0009,
-      "multiple": 13.6,
-      "state": "THIN",
-      "reason": "trench: 4 launches < 5 required"
-    },
-    {
-      "root": "fund",
-      "launches": 4,
-      "deployers": 3,
-      "baseline_share": 0.0029,
-      "multiple": 4.2,
+      "deployers": 1,
+      "baseline_share": 0.0048,
+      "multiple": 1.8,
       "state": "BELOW",
-      "reason": "fund: 4.2x over baseline < 6.0x required"
+      "reason": "prd: 1.8x over baseline < 6.0x required"
     },
     {
-      "root": "giga",
+      "root": "counterparty",
       "launches": 4,
-      "deployers": 3,
-      "baseline_share": 0.0041,
-      "multiple": 3,
+      "deployers": 1,
+      "baseline_share": 0.0055,
+      "multiple": 1.6,
       "state": "BELOW",
-      "reason": "giga: 3.0x over baseline < 6.0x required"
+      "reason": "counterparty: 1.6x over baseline < 6.0x required"
     },
     {
       "root": "layerbank",
       "launches": 4,
       "deployers": 1,
       "baseline_share": 0.0053,
-      "multiple": 2.3,
+      "multiple": 1.6,
       "state": "BELOW",
-      "reason": "layerbank: 2.3x over baseline < 6.0x required"
+      "reason": "layerbank: 1.6x over baseline < 6.0x required"
     },
     {
-      "root": "staked",
+      "root": "predictor",
       "launches": 4,
-      "deployers": 4,
-      "baseline_share": 0.0069,
-      "multiple": 1.8,
+      "deployers": 1,
+      "baseline_share": 0.0055,
+      "multiple": 1.6,
       "state": "BELOW",
-      "reason": "staked: 1.8x over baseline < 6.0x required"
+      "reason": "predictor: 1.6x over baseline < 6.0x required"
     },
     {
-      "root": "cow",
+      "root": "amm",
       "launches": 4,
-      "deployers": 2,
-      "baseline_share": 0.0072,
-      "multiple": 1.7,
+      "deployers": 3,
+      "baseline_share": 0.0062,
+      "multiple": 1.4,
       "state": "BELOW",
-      "reason": "cow: 1.7x over baseline < 6.0x required"
+      "reason": "amm: 1.4x over baseline < 6.0x required"
     },
     {
-      "root": "elysigrow",
-      "launches": 3,
+      "root": "volatile",
+      "launches": 4,
       "deployers": 3,
-      "baseline_share": 0.0004,
-      "multiple": 23,
-      "state": "THIN",
-      "reason": "elysigrow: 3 launches < 5 required"
-    },
-    {
-      "root": "hao",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0004,
-      "multiple": 23,
-      "state": "THIN",
-      "reason": "hao: 3 launches < 5 required"
-    },
-    {
-      "root": "joe",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0004,
-      "multiple": 23,
-      "state": "THIN",
-      "reason": "joe: 3 launches < 5 required"
-    },
-    {
-      "root": "ni",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0004,
-      "multiple": 23,
-      "state": "THIN",
-      "reason": "ni: 3 launches < 5 required"
-    },
-    {
-      "root": "ti",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0004,
-      "multiple": 23,
-      "state": "THIN",
-      "reason": "ti: 3 launches < 5 required"
-    },
-    {
-      "root": "zcash",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0004,
-      "multiple": 23,
-      "state": "THIN",
-      "reason": "zcash: 3 launches < 5 required"
-    },
-    {
-      "root": "onchain",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0008,
-      "multiple": 11.5,
-      "state": "THIN",
-      "reason": "onchain: 3 launches < 5 required"
-    },
-    {
-      "root": "hi",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.001,
-      "multiple": 9.2,
-      "state": "THIN",
-      "reason": "hi: 3 launches < 5 required"
-    },
-    {
-      "root": "pons",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0013,
-      "multiple": 7.1,
-      "state": "THIN",
-      "reason": "pons: 3 launches < 5 required"
-    },
-    {
-      "root": "frog",
-      "launches": 3,
-      "deployers": 3,
-      "baseline_share": 0.0019,
-      "multiple": 4.8,
+      "baseline_share": 0.0083,
+      "multiple": 1,
       "state": "BELOW",
-      "reason": "frog: 4.8x over baseline < 6.0x required"
+      "reason": "volatile: 1.0x over baseline < 6.0x required"
     },
     {
-      "root": "brownfi",
+      "root": "eggs",
       "launches": 3,
       "deployers": 3,
-      "baseline_share": 0.0025,
-      "multiple": 3.7,
-      "state": "BELOW",
-      "reason": "brownfi: 3.7x over baseline < 6.0x required"
+      "baseline_share": 0.0004,
+      "multiple": 16.1,
+      "state": "THIN",
+      "reason": "eggs: 3 launches < 5 required"
     },
     {
-      "root": "bf",
+      "root": "fullrange",
       "launches": 3,
       "deployers": 3,
-      "baseline_share": 0.0027,
-      "multiple": 3.4,
-      "state": "BELOW",
-      "reason": "bf: 3.4x over baseline < 6.0x required"
+      "baseline_share": 0.0004,
+      "multiple": 16.1,
+      "state": "THIN",
+      "reason": "fullrange: 3 launches < 5 required"
     },
     {
-      "root": "borrowable",
+      "root": "gifs",
       "launches": 3,
-      "deployers": 2,
-      "baseline_share": 0.0027,
-      "multiple": 3.4,
-      "state": "BELOW",
-      "reason": "borrowable: 3.4x over baseline < 6.0x required"
+      "deployers": 3,
+      "baseline_share": 0.0004,
+      "multiple": 16.1,
+      "state": "THIN",
+      "reason": "gifs: 3 launches < 5 required"
     }
   ],
   "recent": [
     {
-      "address": "0xe1d46be7061a43ce072e57b31704479f036ac15d",
-      "name": "CASHTAG",
-      "symbol": "CASHTAG",
-      "deployer": "0x4337002c5702ce424cb62a56ca038e31e1d4a93d",
-      "block": 111614573,
-      "ts": "2026-11-11T09:57:34.000Z",
+      "address": "0xfb4d823cf90ce474d5da5120a923e34e171b9f39",
+      "name": "Drog Bags",
+      "symbol": "DROGBAG",
+      "deployer": "0xf64fe29d08ba77c439e48c0f65c46479679ea2af",
+      "block": 111881366,
+      "ts": "2026-11-11T17:39:35.000Z",
       "ts_exact": true,
       "direct": false
     },
     {
-      "address": "0x8fd374d34fa37ce2b8a6e9111eaaaf6fd62b6459",
-      "name": "Giraffies",
-      "symbol": "GIRAFFIES",
-      "deployer": "0xc467370dc17f3428ec620fca05c33ea647e80ead",
-      "block": 111614425,
-      "ts": "2026-11-11T09:57:18.000Z",
+      "address": "0x944b7d5e3b2087dcf511eefee090679fa8e7debd",
+      "name": "Traverse Minning",
+      "symbol": "TRVS",
+      "deployer": "0xfba6f8442025453d0ed88b77a92d48f043ce62b1",
+      "block": 111881261,
+      "ts": "2026-11-11T17:39:24.000Z",
       "ts_exact": true,
       "direct": false
     },
     {
-      "address": "0x962b970e5867425bc91f6425e3c983c26e8d306a",
-      "name": "Uniswap V2",
-      "symbol": "UNI-V2",
-      "deployer": "0xf664241459f2d3be3f36f9c9a46a5c1d82c63492",
-      "block": 111614339,
-      "ts": "2026-11-11T09:57:09.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xbe9eb0d0246bf798a156e7c5977e97cd60e9dcc5",
-      "name": "THE BUFOS",
-      "symbol": "THE BUFOS",
-      "deployer": "0xf44ede2a82f114ff2032a97e600891164db5ff8c",
-      "block": 111614327,
-      "ts": "2026-11-11T09:57:08.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xf28b7d075bff2c828675376ec176ec06e530d01e",
-      "name": "Boat'n Fish",
-      "symbol": ".",
-      "deployer": "0xed47a2d1f85ab712d68d38b98d9cd0292e9df4e3",
-      "block": 111613777,
-      "ts": "2026-11-11T09:56:08.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x90caf17a97773591833b528ae531c5267c7a7777",
-      "name": "COVID19 Variant PJ21",
-      "symbol": "PJ21",
-      "deployer": "0x498b1bee7a146a4d10514f2d8eb1201b447ad384",
-      "block": 111613760,
-      "ts": "2026-11-11T09:56:06.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x6a12c00564654102925a360b05ac9776a814253d",
-      "name": "COVID19 variant PJ21",
-      "symbol": "PJ21",
-      "deployer": "0x8c44517df5eaa841687da5b2b5908c951f0dc0c0",
-      "block": 111613675,
-      "ts": "2026-11-11T09:55:56.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x25141f4f15c4f4ed8eae3b5ecfc8971725670087",
-      "name": "Flying Ketamine Cat",
-      "symbol": "FKC",
-      "deployer": "0xffbfda02f54be10a720a2b1a429218d39474115d",
-      "block": 111613561,
-      "ts": "2026-11-11T09:55:44.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x7e690c7848ddf3f3f5c7cec5ecf499dad2543d8c",
-      "name": "All In Frog",
-      "symbol": "AIF",
-      "deployer": "0xf664241459f2d3be3f36f9c9a46a5c1d82c63492",
-      "block": 111613504,
-      "ts": "2026-11-11T09:55:37.000Z",
-      "ts_exact": true,
-      "direct": true
-    },
-    {
-      "address": "0x026df18fbd2a7639089d0a16293383ec687a5ca1",
-      "name": "Longbow Core USDG",
-      "symbol": "lbcoreUSDG",
-      "deployer": "0x5abb94e1a0e22be51be10054cd786f385a1a34a1",
-      "block": 111613226,
-      "ts": "2026-11-11T09:55:07.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xdb7aff721563840878e42a844a853cee91ef7777",
-      "name": "PARAM",
-      "symbol": "PARAM",
-      "deployer": "0x7485fbfd99993dab4c9964f53791e40d14253c97",
-      "block": 111613171,
-      "ts": "2026-11-11T09:55:01.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x15d0fa013539e80109dfd5eebba6b42959460087",
-      "name": "Flying Ketamine Cat",
-      "symbol": "FKC",
-      "deployer": "0xffbfda02f54be10a720a2b1a429218d39474115d",
-      "block": 111613106,
-      "ts": "2026-11-11T09:54:54.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xc80475d95157173a8ac76ce27f520e86ba93cfaa",
-      "name": "MarsCoin",
-      "symbol": "MARS",
-      "deployer": "0x4337003fcd2f56de3977ccb806383e9161628d0e",
-      "block": 111612641,
-      "ts": "2026-11-11T09:54:05.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x957ff56c662020fc097727d70ab1e4189fc07777",
-      "name": "MC TYSON",
-      "symbol": "MCTYSON",
-      "deployer": "0xa7ba884561771e707f7f29bd5388b77f1e470daf",
-      "block": 111612576,
-      "ts": "2026-11-11T09:53:58.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xd56857948a92f0cdff847e4e8b080b9d4332270b",
-      "name": "Dictator Dares copy 7",
-      "symbol": "DARE",
-      "deployer": "0xcade0f7535b7dcd9b59310023aca200a10566f0b",
-      "block": 111612166,
-      "ts": "2026-11-11T09:53:14.000Z",
-      "ts_exact": true,
-      "direct": true
-    },
-    {
-      "address": "0x6ee92fb1b12b8cca4d50f960ca28f2b2ad50281b",
-      "name": "Trencher Inu",
-      "symbol": "TI",
-      "deployer": "0x4337004ec9c1417f1c7a26ebd4b4fbed6acf9e5d",
-      "block": 111612091,
-      "ts": "2026-11-11T09:53:06.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xfaf3ae7a295883bf0a4f131297200a1cf266421d",
-      "name": "Uniswap V2",
-      "symbol": "UNI-V2",
-      "deployer": "0x889e29bc59f70d86e62731e0110570515962079e",
-      "block": 111612085,
-      "ts": "2026-11-11T09:53:05.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x090105b55f00476004c752ddbe48ede1c0da99c6",
-      "name": "Carspreading",
-      "symbol": "Carspreading",
-      "deployer": "0x889e29bc59f70d86e62731e0110570515962079e",
-      "block": 111611949,
-      "ts": "2026-11-11T09:52:50.000Z",
-      "ts_exact": true,
-      "direct": true
-    },
-    {
-      "address": "0x91d5d2c999c35ce061fd4967e6764cdd9cf1b3e1",
-      "name": "Ixs Token",
-      "symbol": "IXS",
-      "deployer": "0x96111cc4867c5e1c22da4b79bb8852b9e2a07eb1",
-      "block": 111611915,
-      "ts": "2026-11-11T09:52:47.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x9fae770e44e64f22b4fd5c2974a78f067640c90b",
-      "name": "BrownFi V3",
-      "symbol": "BF-V3",
-      "deployer": "0x67337a62e42f0e021323d4feeec22ddf431aa8ae",
-      "block": 111611879,
-      "ts": "2026-11-11T09:52:43.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
-      "name": "Moderna • Robinhood Token",
-      "symbol": "MRNA",
-      "deployer": "0x2b94105fff37630f98e1f24811dad588fc5c3a87",
-      "block": 111611560,
-      "ts": "2026-11-11T09:52:09.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xc89174314f79eb5b91866ad997932f6ff8236bba",
-      "name": "boxing cat",
-      "symbol": "BOXCAT",
-      "deployer": "0x4337001fff419768e088ce247456c1b892888084",
-      "block": 111611414,
-      "ts": "2026-11-11T09:51:54.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xfc8ff7fa702cb207e54dc0923c5079eadb9b7777",
-      "name": "Folks Finance FOLKS",
-      "symbol": "FOLKS",
-      "deployer": "0x1b4ebe73585b94578dc055c6ac7e89333fdadcf7",
-      "block": 111611324,
-      "ts": "2026-11-11T09:51:44.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x4930f6c8b1e0f884c1ed588f657732a6613c3889",
-      "name": "Uniswap V2",
-      "symbol": "UNI-V2",
-      "deployer": "0xd0de29df8d83fa8a80dbbf80fed012f680317177",
-      "block": 111611315,
-      "ts": "2026-11-11T09:51:43.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x8c1c5afd96a424f85f4fe76c5784d91a97cb34e8",
-      "name": "tackle",
-      "symbol": "tackle",
-      "deployer": "0xda3b6f37431f1a3f7491a0d84569d011e1399d32",
-      "block": 111611238,
-      "ts": "2026-11-11T09:51:35.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x51f6c150225eedccf0532fbc644df1f56cb4e95c",
-      "name": "CASHTAG",
-      "symbol": "CASHTAG",
-      "deployer": "0x4337003fcd2f56de3977ccb806383e9161628d0e",
-      "block": 111610881,
-      "ts": "2026-11-11T09:50:57.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x38f728351fd9565087a4ff0ad5049739e0ce235c",
-      "name": "Monero",
-      "symbol": "XMR",
-      "deployer": "0x46149ac27e6aa417f3db65a7db08fba3c2204986",
-      "block": 111610596,
-      "ts": "2026-11-11T09:50:27.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xc946271ee4712cf5feff8bde8b9b17608c977777",
-      "name": "Trench Cate",
-      "symbol": "TC",
-      "deployer": "0xfe2cb6b8c284d632390268d8007873ac5865db0b",
-      "block": 111610464,
-      "ts": "2026-11-11T09:50:12.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x317f8c175119d06a41d8a34b06106f06bd3a0087",
-      "name": "Justice For Shiqi",
-      "symbol": "十七",
-      "deployer": "0x2bcb6d7b5b12f94b91441aa2cdce68e3d96877af",
-      "block": 111610440,
-      "ts": "2026-11-11T09:50:10.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x4cc33bc38b5a9818e1a2c14c6b0f69cbe4fe5f42",
-      "name": "Trench Cate",
-      "symbol": "TC",
-      "deployer": "0xffbfda02f54be10a720a2b1a429218d39474115d",
-      "block": 111610349,
-      "ts": "2026-11-11T09:50:00.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x0c71891165f2ec17dcf2f15cadc62b120b2b7777",
-      "name": "Qubic Network QUBIC",
-      "symbol": "QUBIC",
-      "deployer": "0x498b1bee7a146a4d10514f2d8eb1201b447ad384",
-      "block": 111610133,
-      "ts": "2026-11-11T09:49:38.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0xda38ac72ce7220c4dd7719d114ef94edadb8f068",
-      "name": "Ekubo Ve33 Positions",
-      "symbol": "ekuVe33Po",
-      "deployer": "0x74f80418881ce7535c704756f878c2ddc93bbf5b",
-      "block": 111610113,
-      "ts": "2026-11-11T09:49:35.000Z",
-      "ts_exact": true,
-      "direct": false
-    },
-    {
-      "address": "0x53902d7832f3c4f8de5c2a25ab2b869acb49d48f",
+      "address": "0xcbc68380accfdccd395fe63502e9c67360041923",
       "name": "Uniswap V2",
       "symbol": "UNI-V2",
       "deployer": "0x168b921aa662cac2a0b76a7d1fc95ccaa85210eb",
-      "block": 111609662,
-      "ts": "2026-11-11T09:48:48.000Z",
+      "block": 111881147,
+      "ts": "2026-11-11T17:39:13.000Z",
       "ts_exact": true,
       "direct": false
     },
     {
-      "address": "0x624c6009d33a3040e43c08b0810342b90bb903dd",
-      "name": "OnChain Pippy Seer",
-      "symbol": "ps",
-      "deployer": "0xeaed50de76acc5fde1be985d6d5f75f4b00e0a08",
-      "block": 111609318,
-      "ts": "2026-11-11T09:48:12.000Z",
+      "address": "0xee8fed06832242715f91c9ecb1486cd247a5764d",
+      "name": "Sector One",
+      "symbol": "SECTORONE",
+      "deployer": "0x15e32d4bfe23d6aa466e1bce138a90cb70a2662f",
+      "block": 111881119,
+      "ts": "2026-11-11T17:39:10.000Z",
       "ts_exact": true,
       "direct": false
     },
     {
-      "address": "0x14c49e6118f46525de9ab41a51cbaa3c6ebf181d",
-      "name": "Rare Friends Generations",
-      "symbol": "GENERATIONS",
-      "deployer": "0x77e1b61de2681b90da4b2e4b17798ec51b01ae6c",
-      "block": 111609306,
-      "ts": "2026-11-11T09:48:10.000Z",
+      "address": "0xaf67c2d255b13a50e9482ed5ba30a3beb5dc9d7f",
+      "name": "BankHood",
+      "symbol": "BHD",
+      "deployer": "0x4337002c5702ce424cb62a56ca038e31e1d4a93d",
+      "block": 111881011,
+      "ts": "2026-11-11T17:38:59.000Z",
       "ts_exact": true,
       "direct": false
     },
     {
-      "address": "0xbf0139b1b710c3c4a958fa402ee707b5b7993480",
-      "name": "nihao cat",
-      "symbol": "NIHAO",
-      "deployer": "0x7b9261f960b0d0734abd5e8a03b230ca20a0c453",
-      "block": 111609303,
-      "ts": "2026-11-11T09:48:10.000Z",
+      "address": "0x41547e8dace40d13143e1d81a47fe6c55c405d41",
+      "name": "Bags Trade",
+      "symbol": "BAGS",
+      "deployer": "0x92b8429eccb32c81ff55b26f967e3cd7837f156d",
+      "block": 111880918,
+      "ts": "2026-11-11T17:38:49.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x13e9830300202dbf7f8d3aa462fd0b456a60eb5b",
+      "name": "The Black Boar",
+      "symbol": "ANSEM",
+      "deployer": "0x4337004ec9c1417f1c7a26ebd4b4fbed6acf9e5d",
+      "block": 111880912,
+      "ts": "2026-11-11T17:38:49.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0xf055487ed884ff1a05f3ecf45e8882bf35146e15",
+      "name": "BankHood",
+      "symbol": "BHD",
+      "deployer": "0x4337002c5702ce424cb62a56ca038e31e1d4a93d",
+      "block": 111880711,
+      "ts": "2026-11-11T17:38:28.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0xb02f876c68c8c862cccf2be6f3d82f7a12a6d26b",
+      "name": "Chinu",
+      "symbol": "Chinu",
+      "deployer": "0x0640e950abb955db7c39b3a98033bab3ac7f7830",
+      "block": 111880505,
+      "ts": "2026-11-11T17:38:07.000Z",
       "ts_exact": true,
       "direct": true
     },
     {
-      "address": "0xf9a6ec003e60a445de8c52eb021a13cecef84a51",
-      "name": "agent rigsby",
-      "symbol": "RIGSBY",
-      "deployer": "0x1a3169c63da4dbe65c85f51c4f641f3e98d16147",
-      "block": 111609242,
-      "ts": "2026-11-11T09:48:04.000Z",
+      "address": "0x1898cef629b4e3680fbda7ed31930dfbf781b32a",
+      "name": "Agentic Layer",
+      "symbol": "SILEX",
+      "deployer": "0xb40a859ef67a56e51c5d186504d6d4ede1f9c588",
+      "block": 111880494,
+      "ts": "2026-11-11T17:38:06.000Z",
       "ts_exact": true,
       "direct": false
     },
     {
-      "address": "0x343d86539c6cda01225b39f29a99861f61384afd",
-      "name": "Jensen Index",
-      "symbol": "JENSEN",
+      "address": "0xa02f6ebc0adbc1aaea496f8c6f9725cdc987a471",
+      "name": "ASCIHOOD",
+      "symbol": "ASCIHOOD",
+      "deployer": "0x0a278419f9e3f0571a69bc03f4fcab8d06cee929",
+      "block": 111880484,
+      "ts": "2026-11-11T17:38:05.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x67e33c4a80921779c87b64480002778dfa811b6a",
+      "name": "The Black Boar",
+      "symbol": "ANSEM",
       "deployer": "0x4337004ec9c1417f1c7a26ebd4b4fbed6acf9e5d",
-      "block": 111609222,
-      "ts": "2026-11-11T09:48:02.000Z",
+      "block": 111880483,
+      "ts": "2026-11-11T17:38:05.000Z",
       "ts_exact": true,
       "direct": false
     },
     {
-      "address": "0xb47a306bd89e8b6fa2b14f553e534adcd7cc337f",
-      "name": "CollectorCrypt",
-      "symbol": "COLLECTOR",
-      "deployer": "0x211d98242e4c58e9eb17e3cc135a165bd59dd172",
-      "block": 111609222,
-      "ts": "2026-11-11T09:48:02.000Z",
+      "address": "0x03d550f4baf2dcbaee3161bf8f386aa35b85f6d2",
+      "name": "Chicken Tenders",
+      "symbol": "Tender",
+      "deployer": "0x75310724d63bc9e0eb63e6edb46b4e1ee4929839",
+      "block": 111880481,
+      "ts": "2026-11-11T17:38:05.000Z",
       "ts_exact": true,
       "direct": false
     },
     {
-      "address": "0x2c04759217326a9c0a6e23f7a0f6bf6700a58105",
-      "name": "drop",
-      "symbol": "drop",
-      "deployer": "0xfb4a2b16b9a13913d02d40a4c4e121ee68517a08",
-      "block": 111608942,
-      "ts": "2026-11-11T09:47:32.000Z",
+      "address": "0x69cfe60739a2341ef01e894000afa7f76dce9620",
+      "name": "GreenStreet MMO",
+      "symbol": "gro",
+      "deployer": "0x08a8aa8e9e6f6ee85c2645d6756d479047d3b09b",
+      "block": 111880472,
+      "ts": "2026-11-11T17:38:04.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x3e643aa8ae4822951e0f778a70e472bde0615828",
+      "name": "GoDark",
+      "symbol": "GODARK",
+      "deployer": "0xfe61a716eb380c6ebf1138ab39c5c69aaf0c94a7",
+      "block": 111880295,
+      "ts": "2026-11-11T17:37:46.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0xe9b28194ee8b1c9d53bd6fb3b8c25890d9db0aa1",
+      "name": "Cow Uniswap Robinhood AVGO-USDG",
+      "symbol": "cowUniswapRobinhoodAVGO-USDG",
+      "deployer": "0x30f10a8cb77425beea91f132c124ac755f05300e",
+      "block": 111880223,
+      "ts": "2026-11-11T17:37:39.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x2dfee911320aa2e9d7111116704a5fdd3e22d9ec",
+      "name": "Reward Cow Uniswap Robinhood AVGO-USDG",
+      "symbol": "rcowUniswapRobinhoodAVGO-USDG",
+      "deployer": "0x30f10a8cb77425beea91f132c124ac755f05300e",
+      "block": 111880223,
+      "ts": "2026-11-11T17:37:39.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x4da706404585ea39315ad68ab214149d2d591780",
+      "name": "Over The Ring",
+      "symbol": "OTR",
+      "deployer": "0x4337005db25dbad41da5692ba1188751ee5d98b6",
+      "block": 111880190,
+      "ts": "2026-11-11T17:37:35.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x84c676b026305383e00a204822d65118555d76cb",
+      "name": "Safe Labs",
+      "symbol": "SAFELABS",
+      "deployer": "0x1d5b7006b226eff8d139cd332218706f15bd9af2",
+      "block": 111879959,
+      "ts": "2026-11-11T17:37:12.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x31864f716b81167e5ce29ca54d2f12081bbbf82c",
+      "name": "Nexa Code",
+      "symbol": "NEXA",
+      "deployer": "0xe53919063adfbea5589b4b363d7ce8da6e8da064",
+      "block": 111879907,
+      "ts": "2026-11-11T17:37:07.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x863d6f108ed935e68260d618a5a920db2e8df3a4",
+      "name": "jeff",
+      "symbol": "jeff",
+      "deployer": "0x734844b0779430e29fd451bc35d996fe18e89054",
+      "block": 111879887,
+      "ts": "2026-11-11T17:37:04.000Z",
+      "ts_exact": true,
+      "direct": true
+    },
+    {
+      "address": "0xf9e6554a5a55e3c5ff44424259dd02a7b1b80087",
+      "name": "The Shit Coin",
+      "symbol": "SHIT",
+      "deployer": "0x2bcb6d7b5b12f94b91441aa2cdce68e3d96877af",
+      "block": 111879784,
+      "ts": "2026-11-11T17:36:54.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x1216cdce8baceb7bffbcf5c2809ffaa5bf01cb61",
+      "name": "Nothing Coin",
+      "symbol": "NothingCoin",
+      "deployer": "0x75310724d63bc9e0eb63e6edb46b4e1ee4929839",
+      "block": 111879731,
+      "ts": "2026-11-11T17:36:48.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x92a2ac08f186e0a4edf4999d45385c213bc5fcba",
+      "name": "Dices",
+      "symbol": "DICES",
+      "deployer": "0x4337004ec9c1417f1c7a26ebd4b4fbed6acf9e5d",
+      "block": 111879649,
+      "ts": "2026-11-11T17:36:40.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x79d1e474da84259a13998f16276e7574d3d2da2b",
+      "name": "Float",
+      "symbol": "FLOAT",
+      "deployer": "0xe55e5bb75650aef51215cc3601d367cb95e03cda",
+      "block": 111879638,
+      "ts": "2026-11-11T17:36:39.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0xf1c7674715594304eac25e02150c87819fb25111",
+      "name": "t22222",
+      "symbol": "t22222",
+      "deployer": "0xdf00a1fd29220617bd9c1049115d5bb553bbfbb9",
+      "block": 111879289,
+      "ts": "2026-11-11T17:36:03.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0xcceded0872fc11ca66bad69de829f12db6fdd56e",
+      "name": "TRIX",
+      "symbol": "TRIXAI",
+      "deployer": "0x70b898d9f9697b9ba8facd06161992b1d00dd227",
+      "block": 111879216,
+      "ts": "2026-11-11T17:35:56.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x1b1c7bac40425a9972a6f112b3d2209d989ed458",
+      "name": "1claw AI",
+      "symbol": "1clawAI",
+      "deployer": "0xbe9306ddf2c0ddd69227adb2c7e7ef4d0b5697d5",
+      "block": 111879204,
+      "ts": "2026-11-11T17:35:54.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x4bc0b4ff45a204ef3442cf739860cef5f9c349ad",
+      "name": "Lilly Paws",
+      "symbol": "LPS",
+      "deployer": "0xc6f0e8549fae6f22bd7454636073bb989853f5f9",
+      "block": 111879176,
+      "ts": "2026-11-11T17:35:51.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x0a4a121842966db6f273b1ab10138d983d985943",
+      "name": "Moonpeak.ai",
+      "symbol": "MOONPEAK",
+      "deployer": "0xe9361f1a747e866c1ce4f27badbe6526ec400420",
+      "block": 111879147,
+      "ts": "2026-11-11T17:35:49.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x7f8d5860c5cd6e284b07eb3f1e93e01420b15a9f",
+      "name": "Another Bags Cat",
+      "symbol": "ABC",
+      "deployer": "0x4337005db25dbad41da5692ba1188751ee5d98b6",
+      "block": 111879139,
+      "ts": "2026-11-11T17:35:48.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0xbd79d281ea4af826a5ba4a183381adac113642d1",
+      "name": "RobinCat",
+      "symbol": "ROBINCAT",
+      "deployer": "0xdf1ead76d2d0f8fe7494ce72def15ad0e953cb97",
+      "block": 111879071,
+      "ts": "2026-11-11T17:35:41.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0xa33a8a0db84772d9ddb3a6a989491bf87efb1c9d",
+      "name": "Hood Junkies",
+      "symbol": "HJ",
+      "deployer": "0x56eac10eb3dccecfd1d1b7e5fb319713781e05e0",
+      "block": 111878988,
+      "ts": "2026-11-11T17:35:32.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x5dc7690d1b0807672928b3d6f626cafe1e001e18",
+      "name": "Covid PJ.2.1",
+      "symbol": "PJ",
+      "deployer": "0x387ae0b63dcd92f0220149d31958c72c270993fc",
+      "block": 111878724,
+      "ts": "2026-11-11T17:35:05.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x1b9828b868e300c2b0cc61cbf17e6a9bb57f5843",
+      "name": "EURC COIN",
+      "symbol": "EURC",
+      "deployer": "0xc16e559ea05640c1788ab2ed0d987b882942d3a2",
+      "block": 111878569,
+      "ts": "2026-11-11T17:34:49.000Z",
+      "ts_exact": true,
+      "direct": true
+    },
+    {
+      "address": "0xe60c1f5d9ba7f62a392a78472a3ab83dd62467a3",
+      "name": "FUEL",
+      "symbol": "FUEL",
+      "deployer": "0x9fe8a03312b196a271f13b14924a6d4cf06987e2",
+      "block": 111878561,
+      "ts": "2026-11-11T17:34:49.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x57af193a48c6911a79d05e5bbf7d31a3ef78ce7f",
+      "name": "Internet Cat Money",
+      "symbol": "ICM",
+      "deployer": "0x4337005db25dbad41da5692ba1188751ee5d98b6",
+      "block": 111878437,
+      "ts": "2026-11-11T17:34:36.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x741bd193b6b40f8703d2e116fd1965421f290f58",
+      "name": "evaUSDC",
+      "symbol": "evaUSDC",
+      "deployer": "0x73a063c96b5d67863deaa7b163207e769a7c2cee",
+      "block": 111877889,
+      "ts": "2026-11-11T17:33:39.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x60eddd968e36b86d8f9ff5b515d259e2717d7777",
+      "name": "Internet Cat Money",
+      "symbol": "ICM",
+      "deployer": "0xba99a63b9ab6033451b21666851b8070af73cbe8",
+      "block": 111877724,
+      "ts": "2026-11-11T17:33:24.000Z",
+      "ts_exact": true,
+      "direct": false
+    },
+    {
+      "address": "0x0f946ca15662918184add23d437ed50e3180cbca",
+      "name": "Robinhood Cyborgs NFT",
+      "symbol": "9",
+      "deployer": "0x08a8aa8e9e6f6ee85c2645d6756d479047d3b09b",
+      "block": 111877589,
+      "ts": "2026-11-11T17:33:10.000Z",
       "ts_exact": true,
       "direct": false
     }
