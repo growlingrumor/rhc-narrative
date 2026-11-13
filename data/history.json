@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-07T02:05:25.000Z",
-    "window_hours": 1,
-    "launches": 321,
-    "deployers": 222,
-    "roots": 382,
-    "narratives": 4,
-    "top": "scamsem",
-    "top_launches": 12,
-    "top_wallets": 12,
-    "multiple": 93.5,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-07T08:40:03.000Z",
     "window_hours": 1,
     "launches": 392,
@@ -309,6 +296,19 @@
     "top_launches": 14,
     "top_wallets": 12,
     "multiple": 90.7,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-13T01:26:04.000Z",
+    "window_hours": 1,
+    "launches": 296,
+    "deployers": 208,
+    "roots": 408,
+    "narratives": 2,
+    "top": null,
+    "top_launches": null,
+    "top_wallets": null,
+    "multiple": null,
     "baseline_ready": true
   }
 ]
