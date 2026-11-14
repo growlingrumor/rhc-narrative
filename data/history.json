@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-07T22:51:15.000Z",
-    "window_hours": 1,
-    "launches": 381,
-    "deployers": 246,
-    "roots": 470,
-    "narratives": 2,
-    "top": "adyros",
-    "top_launches": 10,
-    "top_wallets": 7,
-    "multiple": 65.6,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-08T01:55:43.000Z",
     "window_hours": 1,
     "launches": 288,
@@ -304,6 +291,19 @@
     "launches": 249,
     "deployers": 166,
     "roots": 364,
+    "narratives": 1,
+    "top": null,
+    "top_launches": null,
+    "top_wallets": null,
+    "multiple": null,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-14T02:17:41.000Z",
+    "window_hours": 1,
+    "launches": 239,
+    "deployers": 171,
+    "roots": 317,
     "narratives": 1,
     "top": null,
     "top_launches": null,
