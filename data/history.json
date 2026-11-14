@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-08T19:44:40.000Z",
-    "window_hours": 1,
-    "launches": 383,
-    "deployers": 270,
-    "roots": 528,
-    "narratives": 1,
-    "top": "memeployed",
-    "top_launches": 8,
-    "top_wallets": 8,
-    "multiple": 52.2,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-08T23:10:22.000Z",
     "window_hours": 1,
     "launches": 344,
@@ -309,6 +296,19 @@
     "top_launches": null,
     "top_wallets": null,
     "multiple": null,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-14T23:50:33.000Z",
+    "window_hours": 1,
+    "launches": 231,
+    "deployers": 168,
+    "roots": 324,
+    "narratives": 2,
+    "top": "bill",
+    "top_launches": 11,
+    "top_wallets": 11,
+    "multiple": 119,
     "baseline_ready": true
   }
 ]
