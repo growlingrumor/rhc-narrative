@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-10T02:58:18.000Z",
-    "window_hours": 1,
-    "launches": 270,
-    "deployers": 194,
-    "roots": 385,
-    "narratives": 2,
-    "top": "xcoin",
-    "top_launches": 7,
-    "top_wallets": 7,
-    "multiple": 64.8,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-10T10:45:02.000Z",
     "window_hours": 1,
     "launches": 286,
@@ -309,6 +296,19 @@
     "top_launches": null,
     "top_wallets": null,
     "multiple": null,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-16T02:10:07.000Z",
+    "window_hours": 1,
+    "launches": 291,
+    "deployers": 200,
+    "roots": 402,
+    "narratives": 2,
+    "top": "crack",
+    "top_launches": 6,
+    "top_wallets": 6,
+    "multiple": 51.5,
     "baseline_ready": true
   }
 ]
