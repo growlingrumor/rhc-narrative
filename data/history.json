@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-12T20:31:42.000Z",
-    "window_hours": 1,
-    "launches": 386,
-    "deployers": 221,
-    "roots": 597,
-    "narratives": 3,
-    "top": "jensen",
-    "top_launches": 14,
-    "top_wallets": 12,
-    "multiple": 90.7,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-13T01:26:04.000Z",
     "window_hours": 1,
     "launches": 296,
@@ -309,6 +296,19 @@
     "top_launches": 24,
     "top_wallets": 19,
     "multiple": 191.1,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-19T07:41:38.000Z",
+    "window_hours": 1,
+    "launches": 309,
+    "deployers": 207,
+    "roots": 366,
+    "narratives": 4,
+    "top": "dacitycoin",
+    "top_launches": 36,
+    "top_wallets": 26,
+    "multiple": 291.3,
     "baseline_ready": true
   }
 ]
