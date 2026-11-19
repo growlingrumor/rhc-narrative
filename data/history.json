@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-13T01:26:04.000Z",
-    "window_hours": 1,
-    "launches": 296,
-    "deployers": 208,
-    "roots": 408,
-    "narratives": 2,
-    "top": null,
-    "top_launches": null,
-    "top_wallets": null,
-    "multiple": null,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-13T08:19:34.000Z",
     "window_hours": 1,
     "launches": 290,
@@ -309,6 +296,19 @@
     "top_launches": 36,
     "top_wallets": 26,
     "multiple": 291.3,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-19T16:48:43.000Z",
+    "window_hours": 1,
+    "launches": 467,
+    "deployers": 265,
+    "roots": 552,
+    "narratives": 9,
+    "top": "mario",
+    "top_launches": 54,
+    "top_wallets": 36,
+    "multiple": 289.1,
     "baseline_ready": true
   }
 ]
