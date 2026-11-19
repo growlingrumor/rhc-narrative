@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-13T08:19:34.000Z",
-    "window_hours": 1,
-    "launches": 290,
-    "deployers": 188,
-    "roots": 400,
-    "narratives": 2,
-    "top": "autism",
-    "top_launches": 9,
-    "top_wallets": 9,
-    "multiple": 77.6,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-13T16:32:08.000Z",
     "window_hours": 1,
     "launches": 517,
@@ -309,6 +296,19 @@
     "top_launches": 54,
     "top_wallets": 36,
     "multiple": 289.1,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-19T23:16:09.000Z",
+    "window_hours": 1,
+    "launches": 216,
+    "deployers": 155,
+    "roots": 335,
+    "narratives": 0,
+    "top": null,
+    "top_launches": null,
+    "top_wallets": null,
+    "multiple": null,
     "baseline_ready": true
   }
 ]
