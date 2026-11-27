@@ -1,18 +1,5 @@
 [
   {
-    "closed_at": "2026-11-19T16:48:43.000Z",
-    "window_hours": 1,
-    "launches": 467,
-    "deployers": 265,
-    "roots": 552,
-    "narratives": 9,
-    "top": "mario",
-    "top_launches": 54,
-    "top_wallets": 36,
-    "multiple": 289.1,
-    "baseline_ready": true
-  },
-  {
     "closed_at": "2026-11-19T23:16:09.000Z",
     "window_hours": 1,
     "launches": 216,
@@ -309,6 +296,19 @@
     "top_launches": null,
     "top_wallets": null,
     "multiple": null,
+    "baseline_ready": true
+  },
+  {
+    "closed_at": "2026-11-27T02:59:17.000Z",
+    "window_hours": 1,
+    "launches": 240,
+    "deployers": 150,
+    "roots": 360,
+    "narratives": 1,
+    "top": "dragonriders",
+    "top_launches": 7,
+    "top_wallets": 7,
+    "multiple": 72.9,
     "baseline_ready": true
   }
 ]
